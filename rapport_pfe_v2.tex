@@ -1,0 +1,630 @@
+\documentclass[a4paper,12 pt,a4paper,openany,titlepage,oneside]{book}
+\usepackage[francais]{babel}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{latexsym}
+\usepackage{graphicx}
+\usepackage{url}
+\usepackage{makeidx}
+\usepackage{color}
+\usepackage{fancyhdr}
+\usepackage{amssymb}
+\pagestyle{fancy}
+\usepackage{eso-pic,graphicx}
+\usepackage{tikz}
+\usetikzlibrary{trees}
+\usepackage{graphicx}
+\usepackage[OT1]{fontenc}
+%\usepackage{inputenc}
+ 
+%\usepackage{shadow}
+%\usepackage{headings}
+%\fancyhead[LE,RO]{\itshape \leftmark} \fancyhead[LO,RE]{\thepage }
+ %\fancyfoot[%L%E,%RO]{\itshape\small }
+%\fancyfoot[LO,RE]{\itshape\small Rapport de Stage \hspace{4,5 cm}\\FI : G$\acute{e}$nie Math$\acute{e}$matiques Et Informatique \hspace{1cm} }
+ %\quad  }
+\fancyfoot[C]{}
+\renewcommand{\headrulewidth}{0.5pt}
+\renewcommand{\footrulewidth}{0.5pt}
+\renewcommand{\chaptermark}[1]{%
+\markboth{\chaptername \ \thechapter.\ #1}{}}
+
+\usepackage[dvips, lmargin=2.5cm, rmargin=1.5cm, tmargin=4cm, bmargin=4cm]{geometry}
+% Profondeur de \subsubsection = 3
+\setcounter{tocdepth}{3}     % Dans la table des matieres
+\setcounter{secnumdepth}{3}  % Avec un numero.
+%\setlength{\parindent}{1cm}
+\parskip1ex
+\newcommand{\sep}{\begin{center}*\ \ \ * \end{center}}
+\linespread{1.5}
+\renewcommand{\chaptername}{\vspace*{3cm} \hspace*{5cm}Chapitre}
+\makeatletter
+\def\thickhrulefill{\leavevmode \leaders \hrule height 1ex \hfill \kern \z@}
+\def\@makechapterhead#1{%
+  %\vspace*{50\p@}%
+  \vspace*{10\p@}%
+  {\parindent \z@ \centering \reset@font
+        \thickhrulefill\quad
+        \scshape \@chapapp{} \thechapter
+        \quad \thickhrulefill
+        \par\nobreak
+        \vspace*{10\p@}%
+        \interlinepenalty\@M
+        \hrule
+        \vspace*{10\p@}%
+        \Huge \bfseries #1\par\nobreak
+        \par
+        \vspace*{10\p@}%
+        \hrule
+    %\vskip 40\p@
+    \vskip 100\p@
+  }}
+\def\@makeschapterhead#1{%
+  %\vspace*{50\p@}%
+  \vspace*{10\p@}%
+  {\parindent \z@ \centering \reset@font
+        \thickhrulefill
+        \par\nobreak
+        \vspace*{10\p@}%
+        \interlinepenalty\@M
+        \hrule
+        \vspace*{10\p@}%
+        \Huge \bfseries #1\par\nobreak
+        \par
+        \vspace*{10\p@}%
+        \hrule
+    %\vskip 40\p@
+    \vskip 100\p@
+  }}
+
+
+
+\date{}
+\catcode`\ç=13
+\defç{\c{c}}
+\catcode`\é=13
+\defé{\'e}
+\catcode`\à=13
+\defà{\`a}
+\catcode`\è=13
+\defè{\`e}
+\catcode`\â=13
+\defâ{\^a}
+\catcode`\ù=13
+\defù{\`u}
+\catcode`\ê=13
+\defê{\^e}
+\catcode`\î=13
+\defî{\^\i}
+\catcode`\ï=13
+\defï{\"\i}
+\catcode`\ô=13
+\defô{\^o}
+
+
+
+\newtheorem{thm}{\bf Th\'{e}or\`{e}me}
+\newtheorem{dfn}{\bf D\'{e}finition}
+\newtheorem{dfnps}{\bf D\'{e}finitions et Propri\'{e}t\'{e}s}
+\newtheorem{Def}{\bf D\'{e}finitions}
+\newtheorem{dfnp}{\bf Proposition-D\'{e}finition}
+\newtheorem{coro}{\bf Corollaire}
+\newtheorem{cor}{\bf Corollaire}
+\newtheorem{ex}{\bf Exemple}
+\newtheorem{exe}{\bf Exercice}
+\newtheorem{lem}{\bf Lemme}
+\newtheorem{Cons}{\bf Conséquences}
+\newtheorem{exms}[ex]{\bf Exemples}
+\newtheorem{exs}[ex]{\bf Exemples}
+\newtheorem{con}{\bf Conjecture}
+\newtheorem{pre}{\bf preuve}
+\newtheorem{hyp}{\bf hypothèse}
+\newtheorem{prop}{\bf Proposition}
+\newtheorem{pro}{\bf Propri\`{e}t\'{e}s }
+\newtheorem{prob}{\bf Probl\`{e}me}
+\newtheorem{rem}{\bf Remarque}
+\newtheorem{rems}[rem]{\bf Remarques}
+\newtheorem{nota}{\bf Notation}
+\newtheorem{notas}[nota]{\bf Notations}
+\newcommand{\G} {{\bf G}}
+\newcommand{\I}{{\bf I}}
+\newcommand{\U}{{\bf U}}
+\newcommand{\J}{{\bf J}}
+\newcommand{\p}{{\bf p}}
+\newcommand{\m}{{\bf m}}
+\newcommand{\K}{{\bf K}}
+\newcommand{\Ll}{{\bf L}}
+\newcommand{\Q}{{\QQ}}
+\newcommand{\N}{{\bf N}}
+%\newcommand{\C}{{\bf C}}
+\newcommand{\Z}{{\bf Z}}
+\newcommand{\R}{{\bf R}}
+\newcommand{\Hb}{{\bf H}}
+\newcommand{\Hh}{{\bf H}}
+\newcommand{\Kk}{{\bf K/k}}
+\newcommand{\kkk}{{\bf K/k}}
+\newcommand{\rmt}{\mbox{$\sqrt{-m}$}}
+\newcommand{\rr}[1]{\mbox{$\sqrt{#1}$}}
+\newcommand{\zs}{\mbox{$\zeta(s)$}}
+\newcommand{\jo}{\mbox{$j(\omega)$}}
+\newcommand{\chit}{\mbox{${\tilde\chi}$}}
+\def\NN{I\!\! N}
+\def\AA{I\!\! A}
+\def\LL{I\!\!\!L}
+\def\RR{I\!\! R}
+\def\HH{I\!\! H}
+\def\QQ{\;I\!\!\!\! Q}
+\def\CC{I\!\!\!C}
+\def\UU{I\! \!\!\!U}
+\def\ZZ{Z\!\!\! Z}
+\def\FF{I\!\! F}
+\def\MM{I \!\!M}
+\def\ss{/\!\!\!\!\!\!\!\! \sqsubseteq}
+\def\notsubset{/\!\!\!\!\!\subset}
+\def\m{{\bf m}}
+\def\p{{\bf p}}
+\def\ida{\mathfrak{a}}
+\def\idA{\mathfrak{A}}
+\def\idb{\mathfrak{b}}
+\def\idc{\mathfrak{c}}
+\def\idd{\mathfrak{d}}
+\def\idL{\mathfrak{L}}
+\def\idl{\mathfrak{l}}
+\def\idp{\mathfrak{p}}
+\def\idq{\mathfrak{q}}
+\def\idB{\mathfrak{B}}
+\def\idD{\mathfrak{D}}
+\def\idm{\mathfrak{m}}
+\def\idR{\mathfrak{R}}
+\def\idQ{\mathfrak{Q}}
+\def\idP{\mathfrak{P}}
+\def\idU{\mathfrak{U}}
+\everymath{\displaystyle}
+\title{ }
+\author{}
+\fancyfoot[R]{\today}
+\date{\today}
+\newcommand{\pr} {{\bf   Preuve: \hspace{0.3cm}}}
+\def\qed{\hfill \vrule height3pt width3pt depth2pt}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+	\cfoot{\thepage}
+	%\newpage
+	
+	%\baselineskip=20pt
+	
+	
+	%\newpage
+	\begin{titlepage}
+		\begin{center}
+			\flushleft	\includegraphics[width=5cm]{images/capture01}           \hspace{4cm} \includegraphics[width=5cm]{images/pfe_nv/ribatis.jpg}
+			
+			
+		\end{center}
+		\begin{center}
+			\textsc{\LARGE Faculté des sciences et technique Mohammedia}\\[0.4cm]
+			\textsc{\Large Rapport de stage }\\[0.3cm]
+			{ \LARGE \bfseries CONCEPTION ET D\'EVELEPPEMENT DE TESTS AUTOMATIQUES (NON R\'EGRESSION, S\'ECURIT\'E ET PERFORMANCE) ET SON INT\'EGRATION DANS LA CHAINE CI/CD DE GitLab \\ }
+			\bigskip
+			\bigskip
+			
+			
+			\begin{center}
+				\textsc{	\emph{FI : Génie Mathématiques et  informatique Année universitaire: 2019/2020}}
+				
+			\end{center}
+			
+			\bigskip
+			\begin{minipage}{0.8\textwidth}
+				\begin{flushleft} \large
+					Réalisé par:\\
+					BENAMI Anas [ élève ingénieur ]
+					
+				\end{flushleft}
+			\end{minipage}
+			
+			\begin{flushright}
+				\vspace{1cm}	\emph{Encadré par:\\
+					M. \hspace{0.2cm}KHACHAFI Elmahdi\\
+					M. \hspace{0.2cm}Khadir Omar}
+			\end{flushright}
+			
+			
+			
+			
+			
+			
+		\end{center}
+	\end{titlepage}
+	%\maketitle % Affiche la page de titre selon définitions
+	
+	%\setcounter{tocdepth}{3}
+	% \textbf{} % Le texte du document
+	
+	%\let\cleardoublepage
+	
+	\baselineskip=20pt
+	\chapter*{Dédicace}
+	\begin{center}
+		\huge Au nom du dieu, celui qui fait miséricorde le miséricordieux
+		%\huge ??? ???? ?????? ??????
+	\end{center}
+	
+	
+	\vspace{5cm}
+	Je dédie ce travail à ma famille qui ne cesse pas de m'encourager et me donner le soutien moral et matériel,  à mes amis et à tous ceux qui ont croisé mon chemin et laisser de belles traces sur ma vie.
+	\chapter*{Remerciement}
+	D'un esprit vivement reconnaissant, je tiens à  remercier chaleureusement, mon encadrant  M.  {\bfseries KHACHAFI Elmahdi},  pour le temps qu'il a consacré à m'apporter les outils méthodologiques indispensables à la conduite de ce modeste travail . Son exigence m'a grandement stimulé.\\
+	mes vifs remerciements vont également à M. {\bfseries Khadir Omar}  pour sa patience, ses conseils pleins de sens et pour le suivi et l'intérêt qu'il a porté à mon travail. L'ensemble des collègues de classe pour leurs intérêts et leurs encouragements.\\\\
+	Je remercie également les membres du jury pour l'intérêt qu'ils ont porté à mon projet en acceptant d'examiner mon travail et de l'enrichir par leurs propositions.
+	Aussi mes remerciements au corps professoral et administratif de la faculté des sciences et techniques qui déploient de grands efforts pour nous assurer une très bonne formation.
+	\tableofcontents
+	\listoffigures
+	
+	\chapter*{\textbf{Introduction Générale}}
+	\textbf
+	De nos jours le développement des applications et logiciels sont en constante évolution. Les entreprises pensent alors à gagner en temps et en performances afin d'automatiser la procédure de tests logiciels , car la phase de test est une étape incontournable de tout développement informatique,elle a pour objectif de vérifier que le livrable répond bien aux besoins exprimés par l'utilisateur.
+	
+	Un test est un ensemble de cas à tester pour effectuer une vérification partielle d'un système. Il vise à trouver des bugs.
+	Le but principal est d'identifier un nombre maximum d'anomalies du logiciel dans une courte durée avant livrée les produits aux clients. La qualité sera donc augmentée lorsque les problèmes seront corrigés.
+	
+	Les tests représentent 30 à 50\% du co\^ut de développement, et pour les faire chaque fois d'une manière manuelle c'est lourd premièrement ,et deuxièmement il prend beaucoup du temps et risquer car il se fait par un être humain,ceci est un grand problème.
+	L'automatisation des tests est une solution qui permet de réduire la charge de travail et le temps passé à exécuter des tests de logiciels.C'est à dire gain en temps et en productivité.\\
+	Elle permet aux testeurs de se concentrer sur les tests des nouvelles fonctionnalités de l'application avec une meilleure fiabilité ainsi que de minimiser les risques d'erreurs.
+	
+	L'automatisation des tests logiciels présente de nombreux avantages :
+	
+	$\bullet $ Une vitesse incroyable : Les tests automatisés font des merveilles en vérifiant chaque millimètre. Dans de nombreux cas, il faudrait une éternité pour vérifier les mêmes choses manuellement (si ce n'est carrément impossible).
+	
+	$\bullet $ Réutilisables : Une fois écrit par un ingénieur QA (Quality Assurance), les tests peuvent être utilisés encore et encore, à l'infini. Les mêmes modules peuvent être réutilisés pour d'autres tests sur le projet.
+	
+	$\bullet $ Excellente couverture : Grâce à l'automatisation,On peut couvrir un grand nombre de variantes de cas de test. Cela inclut l'interaction avec plusieurs systèmes d'exploitation, navigateurs etc., ainsi que divers scénarios de comportement d'utilisateur, et bien plus encore. 
+	
+	$\bullet $ Rapports pratiques : La génération des journaux de tests prêts qui listent précisément tous les tests effectués et les bugs trouvés.
+	
+	$\bullet $ Autosuffisance : Les tests automatisés peuvent être exécutés 24 heures sur 24, 7 jours sur 7, sans surveillance, puis vous présenter tous les résultats du test. 
+	% \newpage
+	
+	
+	%A cet effet, nous avons répartit notre rapport en trois chapitres principaux à
+	%commencer par quelques généralités au premier chapitre comprenant une
+	%présentation de l'organisme d'accueil, une présentation du sujet, une étude de l'existant et qui
+	%se termine par des critiques et des suggestions,  le deuxième chapitre comprend l'étude
+	%conceptuelle où sont présentés le diagramme des cas d'utilisation,
+	%le diagramme des classes , et le diagramme de séquences.\\\\
+	
+	%Enfin, nous terminerons par la partie réalisation dans le dernier chapitre où nous
+	%présenterons un aperçu de l'application ainsi que quelque fenêtre et l'organigramme de
+	%fonctionnement.
+	
+	
+	\chapter{\textbf{Cadre Général} }
+	\section{Introduction: }
+	\textbf
+	Ce chapitre est consacré pour la présentation de l'organisme d'accueil, la précision du cadre du projet et la problématique puis l'énumération des étapes de travail à réaliser pour achever ce projet.
+	\section{Cadre du travail: }
+	\textbf
+	Ce stage s'inscrit dans le cadre d'un projet de fin d'études pour l'obtention du diplôme d'ingénieur mathématiques informatique de la Faculté des Sciences et Techniques Mohammedia. Mon stage a été effectué au sein d'une Société de conseil opérationnel en systèmes d'information (Ribatis). Le sujet est intitulé 
+	« Conception et développement de tests automatiques (non régression,sécurité et performance) et son intégration dans la chaine CI/CD de GitLab ».
+	
+	\section{Présentation de l'organisme d'accueil}
+	\textbf
+	RIBATIS est une entreprise de conseil opérationnel en systèmes d'information. Fondée en 2007, elle dispose d'un positionnement innovant alliant le recul des cabinets de conseil et le pragmatisme des sociétés d'ingénierie informatique. RIBATIS propose trois familles de services : Conseil, Technologie et Formation.
+	
+	RIBATIS a réussi le déploiement de plusieurs solutions technologiques à forte valeur ajoutée sur le marché, notamment «E-DMAJ», un ERP dédié à la gestion des activités de l'entreprise au quotidien et «ATHLETIS» un système d'information spécialisé dans la gestion des fédérations, ligues et clubs sportifs.
+	
+	Actuellement l'entreprise, basée à Casablanca, emploie une équipe d'une vingtaine d'ingénieurs et consultants fonctionnels haut niveau.
+	\\
+	\renewcommand{\labelitemi}{$\blacksquare$}
+	\renewcommand{\labelitemi}{$\square$}
+	\begin{itemize}
+		\item \underline{Métier :}\\
+		La mission au quotidien est de veiller au bonheur de l'usager et du fonctionnaire en leur offrant une expérience digitale exceptionnelle. A travers les plateformes digitales qu'ils réalisent, ils visent une transformation radicalement positive de la relation citoyen/administration, en la convertissant en une relation de  collaboration plutôt qu'une relation de contrainte.
+		\item \underline{Approche :}\\
+		l' approche est simple : Proposer les Services e-Gov sous forme d'une succession d'étapes faisant intervenir tour à tour le fonctionnaire et l'usager.
+		
+		Ainsi, au lieu d'avoir deux systèmes distincts : Le 1er servant à soumettre la demande usager (Interface externe) et le 2ème permettant à l'administration de la traiter (Interface interne), nos plateformes les fusionnent en un seul et même e-service. Ceci permet au fonctionnaire et à l?usager de collaborer autour d?un même processus avec comme objectif commun de mener à bien la procédure, tout en respectant la réglementation en vigueur, les limites de responsabilité et la traçabilité des actions.
+		
+		\item \underline{Les platformes : }\\
+		\begin{itemize}
+			\item \textbf{CASAURBA :} Lancé en octobre 2014 et généralisée à la région Casablanca-Settat à fin 2015, Casaurba est une plateforme digitale collaborative assurant la gestion 100\% dématérialisée des autorisations d'urbanisme de +36 communes \\
+			\item \textbf{ROKHAS :} Lancée en Avril 2017, la plateforme Rokhas dématérialise la délivrance des autorisations économiques, en assurant l'équilibre entre développement économique et respect de l'environnement et de la vie en société.\\
+			\item \textbf{CasaOpenData :} Portail de données statistiques ouvertes, alimenté à partir des plateformes digitales Casaurba et Rokhas et publiant des indicateurs précis, actualisés au quotidien et conçus entant qu'outil d'aide à la décision et d'amélioration continue.\\
+			\item \textbf{KAFC/Jibayat :} La Plateforme Karaz Administration Fiscale Communale (KAFC) est une plateforme de getion globale et intégrée de l'ensemble des taxes, droits et redevances collectées au niveau des communes.\\
+			\item \textbf{GÉO HUB :} La plateforme Geohub.ma permet aux institutions, aux entreprises et aux individus de créer facilement et gratuitement leurs propres géoportails. Ils peuvent ainsi, créer, publier, actualiser et valoriser leurs données géographiques.\\
+			\item \textbf{PARAPHEURB :} Parapheur.ma est une plateforme cloud dédiée à la transformation digitale des circuits de signature au sein des administrations publiques et privées.
+		\end{itemize}
+	\end{itemize}
+	\section{\'Etude préalable}
+	\subsection{Présentation de la problématique et proposition de solution}
+	\textbf
+	Souvent on commence par la conception, le développement, le test puis le déploiement d'une application sur un serveur, après un certain temps, on se rend compte qu'il faut ajouter de nouvelles fonctionnalités à notre application. En général ces nouvelles fonctionnalités ont une forte relation avec les fonctionnalités existantes, et par conséquent il y a une forte probabilité que ces dernières soient affectées de manière inattendue.\\
+	
+	La solution est de tester l'intégralité de l'application après chaque modification du code, Pour le faire de manière manuelle, c'est très difficile et prendra beaucoup de temps et risque d'oublier de ne pas tester quelque chose, donc la meilleure solution est l'automatisation des tests.      
+	
+	\subsection{Objectif de l'étude}
+	$\bullet$ Réduire le délai de livraison des produits (déploiement des applications dans les serveurs de production).\\
+	~~$\bullet$ Réduire la charge de travail et le temps passé à exécuter des tests fonctionnelles.\\
+	$\bullet$ Couvrir un grand nombre de variantes de cas de test.\\
+	$\bullet$ Repérer rapidement un bug pendant les cycles de développement.\\
+	$\bullet$ \'Eviter au maximum les erreurs humaine.
+	\section{Plan de travail }
+	\subsection{Organisation du rapport}
+	
+	Pour un bon travail il faut un rapport bien structuré qui peut être exploité après la mise en place de ces tests, pour cela le présent rapport vas être organiser notre  de la manière suivante :\\
+	
+	Dans le premier chapitre, on a met notre projet dans son cadre général en définissant la société d'accueil et en présentant le sujet avec une étude préalable.\\
+	
+	Dans le deuxième chapitre intitulé « Conception et développement des tests », nous allons présenter en premier lieu les tests de (non régression, sécurité et performance) et en deuxième lieu les outils  et le principe de fonctionnement chaque test .\\
+	
+	Enfin et au niveau du troisième et dernier chapitre intitulé 
+	«L'intégration dans la chaine CI/CD de GitLab »,on vas présenter les différentes composantes de cette chaine et son rôle dans l'automatisation. 
+	
+	
+	
+	\subsection{Diagramme de Gantt}
+	\textbf
+	Le diagramme de Gantt est un outil de planification des tâches 
+	nécessaires pour la réalisation d'un projet quelque soit le secteur 
+	d'activité. Il permet de visualiser l'avancement des tâches d'un projet de 
+	manière simple et concise, de planifier et suivre les besoins en ressources 
+	humaines et matérielles et donc de pouvoir suivre l'avancement du projet.\\\\
+	
+	Le diagramme suivant va représenter les taches principales à 
+	réaliser dans le projet.
+	\begin{center}
+		Pas Encore
+	\end{center}
+	
+	
+	
+	
+	
+	
+	\section{Conclusion}
+	Dans ce chapitre, nous avons présenté l'organisme d'accueil encerclant le cadre d'étude,
+	la problématique ainsi que les objectifs. Nous verrons comment implémenter ces différents types de test  dans le chapitre suivant.
+	\chapter{\textbf{Conception et développement des tests}}
+	\section{Introduction}
+	Les systèmes d'information sont amenés à évoluer régulièrement en raison de la nécessité d'intégrer de nouvelles fonctionnalités, de mettre à jour les évolutions à la demande des différentes entités métiers de l'entreprise. Les stratégies digitales accélèrent encore un peu plus les besoins de transformation des systèmes d'information qui doivent intégrer, de plus en plus, de fonctionnalités hétérogènes dans des délais de plus en plus bref.\\
+	
+	Comment dans ces conditions assurer la fiabilité des systèmes d'information ?\\\\
+	En informatique aussi, \textit{\underline{un battement d'ailes d'un papillon peut provoquer une tornade }} \textbf{La théorie de chaos} , il faut donc tester afin de vérifier que les modifications n'ont pas apporté d'instabilités ou d'anomalies, aux conséquences parfois imprévisibles.
+	
+	\section{Les tests de non régression}
+	\subsection{Définition :}
+	\textbf{Le test de non régression} est défini comme un type de test de logiciel pour s'assurer que les nouvelles modifications de code ne devraient pas avoir d'effets secondaires sur les fonctionnalités existantes. Il garantit que l'ancien code fonctionne toujours une fois les dernières modifications de code effectuées.
+	
+	\subsection{Les téchnologies :}
+	\subsubsection{Cucumber}
+	\includegraphics[width=3.2cm]{images/pfe_nv/cucumber.png}
+	est un outil qui prend en charge le développement basé sur le comportement (BDD). Il offre un moyen d'écrire des tests que tout le monde peut comprendre, quelles que soient leurs connaissances techniques.
+	
+	\subsubsection{Selenium}
+	\includegraphics[width=1.4cm]{images/pfe_nv/selenium.png}
+	est un  framework  de  test informatique développé en Java. Il permet d'interagir avec différents navigateurs web de même que le ferait un utilisateur de l'application. Il entre ainsi dans la catégorie des outils de test dynamique facilitant le test fonctionnel .
+	
+	\subsubsection{Langage de programation }
+	\includegraphics[width=1cm]{images/pfe_nv/java.png}
+	est un langage de programmation orienté objet
+	créé par James Gosling et Patrick Naughton, employés de Sun Microsystems.
+	
+	La société Sun a été ensuite rachetée en 2009 par la société Oracle.
+	
+	\subsubsection{Environnement de développement }
+	\includegraphics[width=1.5cm]{images/pfe_nv/IntelliJ_IDEA.png}
+	Est un environnement de développement intégré de technologie Java destiné au développement de logiciels informatiques. Il est développé par JetBrains.
+	
+	
+	\section{Conception}
+	
+	\subsection{Méthodologie de conception}
+	Pour faciliter la tâche on vas utiliser le langage de 
+	modélisation unifié (UML : Unified Modelling Language) c'est une notation  qui permet de modéliser un problème de façon standard. Ce langage est  né de la fusion de plusieurs méthodes existantes auparavant, et il est devenu un référence en terme de modélisation objet, à un tel point que sa connaissance devienne indispensable pour un développeur.
+	
+	\subsection{Architecture}
+	\begin{center}
+		\begin{figure}[!h]
+			\centering
+			\includegraphics[width=15cm]{images/pfe_nv/Architecture_nv.png} 
+			\caption{Diagramme de Classe [ Architecture ] }
+			\label{page1}
+		\end{figure}
+	\end{center}
+	
+	
+	D'abord on commence par la création d'un fichier avec l'extension \textbf{«.feature»} de Cucumber, dans lequel on écrit nos scénarios avec n'importe qu'elle langue (L'anglais, Le francais...),Chaque scénario est une liste d'étapes  à  suivre par  Cucumber.
+	Pour que Cucumber comprenne les scénarios, ils doivent suivre certaines règles de syntaxe de base, appelées  Gherkin.\\
+	\textbf{\underline{Exemple:}} \\
+	
+	
+	\begin{center}
+		\begin{figure}[!h]
+			\centering
+			\includegraphics[width=16cm]{images/pfe_nv/MaitreDouvrageForm.png} ~~~~~~~~~~
+			\includegraphics[width=10cm]{images/pfe_nv/Invalide_Birth_Day.png}
+			\caption{Scenario Utilisateur entre une date de naissance invalide [ Plateforme Rokhas ] }
+			\label{page2}
+		\end{figure}
+	\end{center}
+	
+	
+	
+	La deuxième chose, on crée la classe \textbf{BasePage} (C'et une classe Java qui contient comme attributs les éléments web [Bouton,inputText,checkBox...  etc] de la page web qu'on veut tester) on récupèrent les éléments web à l'aide du framework Selenium.\\
+	\textbf{Nb} : Dans cet exemple les éléments sont les attributs du formulaire.\\
+	Après on crée La classe \textbf{«Step Definition»} qui est le coeur de notre travail. Dans cette classe on crée, pour chaque étape (instruction) du scénario, une méthode qui traduit les mots en code java en utilisant le framework Selelnium . \\
+	En fin on crée la classe \textbf{«Runner»} qui est responsable de lancement des scénarios a exécuter, En différencier entre les scénarios par l'annotation \textbf{@} Entéte de chaque scénario, dans notre cas le scénario s'appel InvalidDateOfBirth.\\ 
+	\textbf{Nb} : On peut lancé le nombre de scénarios qu'on veut.  \\
+	La classe \textbf{Commond Methodes} juste pour garder la notion du clean code. \\
+	\subsection{Génération des rapports :}
+	Cucumber nous aide beaucoup, car il nous donne la possibilité de générer des rapport avec différentes formats (HTML,json,xml,...) aprés chaque exécution du test. \\
+	
+	\textbf{Exemple: Un seul scénario} 
+		\begin{center}
+			\begin{figure}[!h]
+				\centering
+				\includegraphics[width=15cm]{images/pfe_nv/dashboard.png}
+				\caption{Rapport du scénario [ Attachements des documents PH ] }
+				\label{page4}
+			\end{figure}
+		\end{center}
+	Comme vous voyez, on a les graphiques qui nous indique par pourcentage, le taux des étapes réussies [en vert], échouées [en rouge] et les étapes ignorées [en bleu].\\
+	Il nous liste aussi tous les étapes du scénario et indique devant chaque étape [Pass, Fail ou bien Skip ].\\
+	\textbf{NB :} une fois Cucumber rencontre une étape échouée, il ignore toutes les étapes qui la suivent. \\
+	\textbf{Exemple: Plusieurs scénarios} 
+		\begin{center}
+			\begin{figure}[!h]
+				\centering
+				\includegraphics[width=16cm]{images/pfe_nv/plusieurs_tests.png}
+				\caption{Rapport des scénarios de  [ Localisation du projet ] }
+				\label{page5}
+			\end{figure}
+		\end{center}
+	En cas d'échec d'un test il fait une capture d'écran pour qu'on puisse savoir exactement qu'est ce qui est passé.	
+		\begin{center}
+			\begin{figure}[!h]
+				\centering
+				\includegraphics[width=10cm]{images/pfe_nv/rapport_test.png}
+				\caption{Rapport d'un scénario qui a échouer  [ Capture d'écran ] }
+				\label{page6}
+			\end{figure}
+		\end{center}
+	\newpage
+	\section{Les tests de sécurité}
+	
+	Il est claire que les conséquences des violations de la sécurité sont dévastatrices, aujourd'hui, les tests de sécurité jouent un rôle vital dans toutes les applications Web, car les pirates continuent d'inventer chaque jour de nouvelles techniques qui peuvent être pour l'argent, la reconnaissance et même pour le plaisir.
+	Les personnes ayant moins de compétences en piratage peuvent détruire une application Web si l'application est mal sécurisée.
+	
+	L'objectif principal des tests de sécurité est de déterminer les vulnérabilités d'un système et de déterminer si ses données et ses ressources sont protégées contre les intrus potentiels.
+	
+	
+	\subsection{Les outils du test :}
+	\subsubsection{Utilisation :}
+	Les scanners de vulnérabilités peuvent être utilisés dans des objectifs licites ou illicites :\\\\
+	$\bullet$ \textbf{Objectifs licites :} les experts en sécurité informatique ou les entreprises utilisent les scanners de vulnérabilités pour trouver les failles de sécurité des systèmes informatiques et des systèmes de communications de leurs entreprises dans le but de les corriger avant que les pirates informatiques ne les exploitent.\\
+	$\bullet$ \textbf{Objectifs illicites :} : les pirates informatiques utilisent les mêmes outils pour trouver les failles dans les systèmes des entreprises pour les exploiter à leur avantage.
+	
+	\subsubsection{Nikto: }
+	\includegraphics[width=1.5cm]{images/pfe_nv/nikto.png}  est un  scanner de vulnérabilité de ligne de commande de logiciel gratuit  qui analyse les  serveurs web  pour les fichiers / CGI dangereux.
+	Il effectue des vérifications génériques et spécifiques au type de serveur. 
+	Il capture et imprime également tous les cookies reçus. \\
+	Le code Nikto lui-même est un logiciel gratuit, mais les fichiers de données qu'il utilise pour piloter le programme ne le sont pas.
+	
+	\subsubsection{Wapiti: }
+	\includegraphics[width=2.5cm]{images/pfe_nv/wapiti_400.png} est un outil open source qui analyse les applications Web pour détecter de multiples vulnérabilités, notamment les injections de base de données,  cross-site scripting, XXE injection, des injections SQL, XPath, PHP, ASP et JSP.\\
+	Il  effectue également des tâches de test de pénétration supplémentaires, telles que la recherche de fichiers potentiellement dangereux sur les serveurs,
+	Les résultats collectés sont automatiquement stockés dans un fichier HTML.
+	
+	\subsection{Application: }
+	\subsubsection{Premier cas: un site vulnérable }
+	
+	On a chercher sur Internet sur des sites vulnérables pour s'assurer que nos outils peuvent détecter des vulnérabilités s'elles existent.\\
+	\textbf{http://www.dvwa.co.uk/} Ses principaux objectifs sont d'aider les professionnels de la sécurité à tester leurs compétences et leurs outils dans un environnement juridique, à aider les développeurs Web à mieux comprendre les processus de sécurisation des applications Web et à aider les enseignants / étudiants à enseigner / apprendre la sécurité des applications Web dans un environnement de salle de classe.\\
+	$\bullet$ \textbf{Output de wapiti :}\\
+	Parmi les avantages de Wapiti et Nikto qu'ils sont facile à utiliser, il suffit d'écrire quelques commandes pour lancer un scan.     
+	\begin{center}
+		\begin{figure}[!h]
+			\centering
+			\includegraphics[width=10cm]{images/pfe_nv/wapiti_copie_vulnerable.png}
+			\caption{Output de la commande de test de vulnérabilités [ Wapiti] }
+			\label{page3}
+		\end{figure}
+	\end{center}
+Aprés chaque scan Wapiti génère un rapport décrit la catégorie et le nombre du vulnérabilités détecter.
+   	\begin{center}
+   		\begin{figure}[!h]
+   			\centering
+   			\includegraphics[width=10cm]{images/pfe_nv/html_report_wapiti_vulnerable.png}
+   			\caption{Rapport généré par Wapiti }
+   			\label{page3}
+   		\end{figure}
+   	\end{center}
+	
+La même chose pour Nikto : 	
+\begin{center}
+	\begin{figure}[!h]
+		\centering
+		\includegraphics[width=8cm]{images/pfe_nv/RapportHTML_NiktoVulnerable.png}
+		\caption{Rapport généré par Nikto }
+		\label{page3}
+	\end{figure}
+\end{center}
+
+\subsubsection{Deuxième cas: La plateforme Rokhas }
+$\bullet$ \textbf{Output de wapiti et de Nikto :}\\
+On a attaqué la plateforme Rokhas par les deux outils, et les deux confirment que la plateforme est bien sécurisé, pas des failles de sécurité, pas des vulnérabilités :    
+\begin{center}
+	\begin{figure}[!h]
+		\centering
+		\includegraphics[width=7cm]{images/pfe_nv/resume.png}~~~~
+		\includegraphics[width=8cm]{images/pfe_nv/nikto_urba.png}
+		\caption{Rapports Plateforme Rokhas [0 vulnérabilités]}
+		\label{page3}
+	\end{figure}
+\end{center}
+	\newpage
+	\section{Les tests de performance}
+	\section{Conclusion}
+	\newpage
+	\chapter{\textbf{L'intégration dans la chaine CI/CD de GitLab}}
+	\section{Introduction}
+	L'approche CI/CD permet d'augmenter la fréquence de distribution des applications grâce à l'introduction de l'automatisation  au niveau des étapes de développement des applications. Les principaux concepts liés à l'approche CI/CD sont l'intégration continue, la distribution continue et le déploiement continu. L'approche CI/CD représente une solution aux problèmes posés par l'intégration de nouveaux segments de code pour les équipes de développement et d'exploitation.
+	\section{Technologies}
+	\includegraphics[width=2.5cm]{images/pfe_nv/gitlogo.jpg} \textbf{Git} est un logiciel de gestion de versions décentralisé. C'est un logiciel libre créé par Linus Torvalds, auteur du noyau Linux, et distribué selon les termes de la licence publique générale GNU version 2. En 2016, il s'agit du logiciel de gestion de versions le plus populaire qui est utilisé par plus de douze millions de personnes.\\
+	
+	\includegraphics[width=2.5cm]{images/pfe_nv/gitlab.png} \textbf{GitLab} est un logiciel libre de forge basé sur git proposant les fonctionnalités de wiki, un système de suivi des bugs, \underline{l'intégration continue} et la\underline{ livraison continue}. Développé par GitLab Inc et créé par Dmitriy Zaporozhets et par Valery Sizov, le logiciel est utilisé par plusieurs grandes entreprises informatiques incluant IBM, Sony, la NASA, Alibaba, Oracle,  Leibniz Rechenzentrum, Boeing, Autodata et SpaceX7...
+	\section{Définitions}
+	\subsection{L'intégration continue [CI]:}
+	% est la pratique de fusionner tout le code produit par les développeurs. La fusion a généralement lieu plusieurs fois par jour dans un référentiel partagé. À partir du référentiel ou de l'environnement de production, des tests de construction et automatisés sont effectués pour garantir l'absence de problèmes d'intégration et l'identification précoce de tout problème.\\
+	 % \textbf{Avantages :}\\
+	  %$\bullet$ Détecte les erreurs le plus rapidement possible: corrige les problèmes tout en étant frais dans l'esprit des développeurs.\\
+%  $\bullet$ \\
+	  L'intégration continue nous fournit une bonne solution lorsque l'entreprise travaille sur un vaste projet ou un client souhaite avoir un logiciel à la fois complet et complexe. Différentes équipes travaillent à la conception de pans de l'application et les développeurs se chargent de programmer les différentes fonctionnalités. Après un travail de plusieurs mois voire de plusieurs années, l'intégralité du travail doit être regroupée et c?est alors que les problèmes surviennent. Dans un tel cas, la détection et la correction des erreurs, le regroupement de tous les fragments de code peut prendre plusieurs mois pour finalement se rapprocher de la phase de test finale et du déploiement.
+	  
+	  Dans le cadre de la continuous integration, l'intégration du nouveau code est effectuée de façon bien plus précoce et pas uniquement lorsque toutes les parties prenantes ont terminé leur sous-domaine. Au lieu de cela, les développeurs intègrent leur code terminé une ou plusieurs fois par jour dans la mainline, le code source qui est accessible par tous les programmeurs. Étant donné qu?il s'agit toujours dans ce cas de sections de code relativement courtes, l'intégration est elle aussi plutôt rapide. Seules quelques minutes sont nécessaires à un développeur pour mettre le résultat de son travail à disposition du reste de l'équipe. Si l'on découvre alors une erreur, elle peut être immédiatement localisée et, dans le meilleur des cas, corrigée rapidement.
+	  
+	 \subsection{La livraison "Delivery"/Déploiement continue [CD]:}
+	 \textbf{La livraison continue} consiste à automatiser toutes les phases de développement, depuis la modification des lignes de code, en incluant la compilation, l'exécution des tests unitaires, des tests d?intégration et des tests fonctionnels, jusqu'à la livraison d?un « package » que l?équipe de Production peut déployer à la demande. En déploiement continu, on y ajoute une dernière phase automatisée : le déploiement du package en production sans intervention humaine.\\
+	 \textbf{Le déploiement continu (CD)} est donc la suite de l?intégration continue. Une fois que les tests sont validés sur l?environnement de dev, il faut mettre en production. Le déploiement continu consiste donc à automatiser les actions de déploiements qui étaient auparavant réalisées manuellement. C?est pour cette raison que l?on parle souvent de CI/CD ensemble, l?un va difficilement sans l?autre. 
+	 \subsubsection{La différence entre déploiement continu et livraison continue}
+	 Le déploiement continu c?est un idéal que peu d?entreprises ont réellement mis en place. La plupart du temps les équipes IT préfèrent avoir la main sur la dernière étape du déploiement. Dans ce cas on parle donc de livraison continue, toutes les étapes du déploiement sont automatisées sauf la dernière : la mise en production.
+	 	\begin{center}
+	 		\begin{figure}[!h]
+	 			\centering
+	 	     	\includegraphics[width=11cm]{images/pfe_nv/deploiementcontinucicd.png}
+	 	     	\caption{Intégration/Livraison/Déploiment Continue}
+	 			\label{page6}
+	 		\end{figure}
+	 	\end{center}
+
+	 Le déploiement continu inclut donc la livraison continue. Le déploiement continu va plus loin que la livraison continue en orchestrant automatiquement le déploiement des nouvelles fonctionnalités.
+	 \section{Principe de fonctionnement} 
+	 \subsection{Le fichier de configuration : }
+	 En substance, le système GitLab CI / CD comprend trois ingrédients principaux:\\
+	 $\bullet$ Runners \\
+	 $\bullet$ Pipelines \\
+	 $\bullet$ Stages [\'Etapes]\\
+	 $\bullet$ Jobs [Tâches] \\ \\
+	 Expliquons chacun d'eux, du bas de la liste:\\
+	 \begin{itemize}
+	 	\item \textbf{Jobs :} La tâche est la plus petite unité à exécuter dans GitLab CI / CD. Il est souvent appelé «étape de construction». Il peut s'agir d'une tâche de génération ou de compilation; il peut exécuter des tests unitaires ...\\
+	 Une seule tâche peut contenir plusieurs commandes (scripts) à exécuter.\\
+	 	\item \textbf{Stages :} Chaque tâche appartient à un seul étape.Une étape peut contenir zéro,un ou plusieurs tâches à exécuter.Tous les tâches d'une étape s'exécutent en parallèle.\\
+        L'étape suivante n'est exécutée que si tous les travaux de l'étape précédente se terminent avec succès - ou s'ils sont marqués comme autorisés à échouer.\\
+        \item \textbf{Piplines :} Un pipeline est un parapluie pour les tâches et les étapes. Pipeline les orchestre et les rassemble. Le pipeline s'exécute lorsque vous envoyez une nouvelle validation ou une nouvelle balise, exécutant tous les travaux à leurs étapes dans le bon ordre. La configuration entière du pipeline est stockée dans le fichier de configuration \textbf{.gitlab-ci.yml} \\
+         \item \textbf{Runners :}  GitLab Runner est le projet open source utilisé pour exécuter les tâches et renvoyer les résultats à GitLab. Il est utilisé conjointement avec GitLab CI / CD .\\
+	 \end{itemize}
+	 
+	  \textbf{Exemple :} \\
+	  	\begin{center}
+	  		\begin{figure}[!h]
+	  			\centering
+	  			\includegraphics[width=18cm]{images/pfe_nv/pipl.png}
+	  			\caption{Exemple d'une pipline}
+	  			\label{page6}
+	  		\end{figure}
+	  	\end{center}
+	  	
+	 \textbf{Note:} le mot clé \underline{tags} a pour but de spécifié le runner qui va exécuté le scripte du stage. Par défaut GitLab contient des runners qui peuvent exécuter les commandes ( Bash, C++, Maven, Nodejs...),Mais dans notre cas, on a ajouté nos 2 runners un pour exécuté les commandes wapiti et l'autre pour exécuté les commandes de Nikto.    
+\end{document} 

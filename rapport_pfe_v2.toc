@@ -1,0 +1,44 @@
+\select@language {french}
+\contentsline {chapter}{\numberline {1}\textbf {Cadre G\'en\'eral} }{9}
+\contentsline {section}{\numberline {1.1}Introduction: }{9}
+\contentsline {section}{\numberline {1.2}Cadre du travail: }{9}
+\contentsline {section}{\numberline {1.3}Pr\'esentation de l'organisme d'accueil}{9}
+\contentsline {section}{\numberline {1.4}\'Etude pr\'ealable}{11}
+\contentsline {subsection}{\numberline {1.4.1}Pr\'esentation de la probl\'ematique et proposition de solution}{11}
+\contentsline {subsection}{\numberline {1.4.2}Objectif de l'\'etude}{12}
+\contentsline {section}{\numberline {1.5}Plan de travail }{12}
+\contentsline {subsection}{\numberline {1.5.1}Organisation du rapport}{12}
+\contentsline {subsection}{\numberline {1.5.2}Diagramme de Gantt}{13}
+\contentsline {section}{\numberline {1.6}Conclusion}{13}
+\contentsline {chapter}{\numberline {2}\textbf {Conception et d\'eveloppement des tests}}{14}
+\contentsline {section}{\numberline {2.1}Introduction}{14}
+\contentsline {section}{\numberline {2.2}Les tests de non r\'egression}{14}
+\contentsline {subsection}{\numberline {2.2.1}D\'efinition :}{14}
+\contentsline {subsection}{\numberline {2.2.2}Les t\'echnologies :}{15}
+\contentsline {subsubsection}{\numberline {2.2.2.1}Cucumber}{15}
+\contentsline {subsubsection}{\numberline {2.2.2.2}Selenium}{15}
+\contentsline {subsubsection}{\numberline {2.2.2.3}Langage de programation }{15}
+\contentsline {subsubsection}{\numberline {2.2.2.4}Environnement de d\'eveloppement }{15}
+\contentsline {section}{\numberline {2.3}Conception}{16}
+\contentsline {subsection}{\numberline {2.3.1}M\'ethodologie de conception}{16}
+\contentsline {subsection}{\numberline {2.3.2}Architecture}{16}
+\contentsline {subsection}{\numberline {2.3.3}G\'en\'eration des rapports :}{18}
+\contentsline {section}{\numberline {2.4}Les tests de s\'ecurit\'e}{20}
+\contentsline {subsection}{\numberline {2.4.1}Les outils du test :}{20}
+\contentsline {subsubsection}{\numberline {2.4.1.1}Utilisation :}{20}
+\contentsline {subsubsection}{\numberline {2.4.1.2}Nikto: }{20}
+\contentsline {subsubsection}{\numberline {2.4.1.3}Wapiti: }{21}
+\contentsline {subsection}{\numberline {2.4.2}Application: }{21}
+\contentsline {subsubsection}{\numberline {2.4.2.1}Premier cas: un site vuln\'erable }{21}
+\contentsline {subsubsection}{\numberline {2.4.2.2}Deuxi\`eme cas: La plateforme Rokhas }{23}
+\contentsline {section}{\numberline {2.5}Les tests de performance}{24}
+\contentsline {section}{\numberline {2.6}Conclusion}{24}
+\contentsline {chapter}{\numberline {3}\textbf {L'int\'egration dans la chaine CI/CD de GitLab}}{25}
+\contentsline {section}{\numberline {3.1}Introduction}{25}
+\contentsline {section}{\numberline {3.2}Technologies}{25}
+\contentsline {section}{\numberline {3.3}D\'efinitions}{26}
+\contentsline {subsection}{\numberline {3.3.1}L'int\'egration continue [CI]:}{26}
+\contentsline {subsection}{\numberline {3.3.2}La livraison "Delivery"/D\'eploiement continue [CD]:}{27}
+\contentsline {subsubsection}{\numberline {3.3.2.1}La diff\'erence entre d\'eploiement continu et livraison continue}{27}
+\contentsline {section}{\numberline {3.4}Principe de fonctionnement}{28}
+\contentsline {subsection}{\numberline {3.4.1}Le fichier de configuration : }{28}
