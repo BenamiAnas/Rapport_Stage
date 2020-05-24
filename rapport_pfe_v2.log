@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2019.3.23)  30 APR 2020 17:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2019.3.23)  24 MAY 2020 15:30
 entering extended mode
 **./rapport_pfe_v2.tex
 (rapport_pfe_v2.tex
@@ -535,23 +535,7 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \c@rem=\count145
 \c@nota=\count146
 
-(rapport_pfe_v2.aux
-
-LaTeX Warning: Label `page3' multiply defined.
-
-
-LaTeX Warning: Label `page3' multiply defined.
-
-
-LaTeX Warning: Label `page3' multiply defined.
-
-
-LaTeX Warning: Label `page6' multiply defined.
-
-
-LaTeX Warning: Label `page6' multiply defined.
-
-)
+(rapport_pfe_v2.aux)
 \openout1 = `rapport_pfe_v2.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 191.
@@ -569,7 +553,8 @@ LaTeX Font Info:    ... okay on input line 191.
 LaTeX Info: Redefining \degres on input line 191.
 LaTeX Info: Redefining \dots on input line 191.
 LaTeX Info: Redefining \up on input line 191.
- ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+
+("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count147
 \scratchdimen=\dimen171
@@ -670,17 +655,17 @@ File: images/pfe_nv/ribatis.jpg Graphic file (type jpg)
 <use images/pfe_nv/ribatis.jpg>
 Package pdftex.def Info: images/pfe_nv/ribatis.jpg used on input line 201.
 (pdftex.def)             Requested size: 142.26378pt x 113.92334pt.
-LaTeX Font Info:    Try loading font information for U+msa on input line 225.
+LaTeX Font Info:    Try loading font information for U+msa on input line 222.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 225.
+LaTeX Font Info:    Try loading font information for U+msb on input line 222.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+lasy on input line 225.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 222.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\ulasy.fd"
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
@@ -692,7 +677,7 @@ Non-PDF special ignored!
 ./images/pfe_nv/ribatis.jpg>] [1
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 258--262
+Underfull \hbox (badness 10000) in paragraph at lines 259--263
 
  []
 
@@ -717,18 +702,18 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
  [6
 
-] [7
+] [7] [8
 
-] [8]
+] [9]
 Chapitre 1.
 
 LaTeX Font Warning: Font shape `OT1/cmr/bx/sc' undefined
-(Font)              using `OT1/cmr/bx/n' instead on input line 302.
+(Font)              using `OT1/cmr/bx/n' instead on input line 303.
 
 Missing character: There is no « in font cmr12!
 Missing character: There is no   in font cmr12!
 Missing character: There is no » in font cmr12!
-[9
+[10
 
 ]
 Missing character: There is no « in font cmr12!
@@ -736,30 +721,19 @@ Missing character: There is no » in font cmr12!
 Missing character: There is no « in font cmr12!
 Missing character: There is no » in font cmr12!
 
-Overfull \hbox (10.05757pt too wide) in paragraph at lines 317--321
+Overfull \hbox (10.05757pt too wide) in paragraph at lines 318--322
 []\OT1/cmr/m/n/12 Actuellement l'en-tre-prise, basee a Ca-sa-blanca, em-ploie
  une equipe d'une ving-taine d'ingenieurs
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 317--321
+Underfull \hbox (badness 10000) in paragraph at lines 318--322
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 329--330
+Underfull \hbox (badness 10000) in paragraph at lines 330--331
 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 331--332
-
- []
-
-
-Overfull \hbox (7.25351pt too wide) in paragraph at lines 332--333
-\OT1/cmr/m/n/12 des au-to-ri-sa-tions economiques, en as-su-rant l'equilibre 
-entre developpement economique
  []
 
 
@@ -767,94 +741,101 @@ Underfull \hbox (badness 10000) in paragraph at lines 332--333
 
  []
 
-[10]
+
+Overfull \hbox (7.25351pt too wide) in paragraph at lines 333--334
+\OT1/cmr/m/n/12 des au-to-ri-sa-tions economiques, en as-su-rant l'equilibre 
+entre developpement economique
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 333--334
 
  []
 
-
+[11]
 Underfull \hbox (badness 10000) in paragraph at lines 334--335
 
  []
 
-Missing character: There is no É in font cmbx12!
 
 Underfull \hbox (badness 10000) in paragraph at lines 335--336
 
  []
 
+Missing character: There is no É in font cmbx12!
 
-Underfull \hbox (badness 10000) in paragraph at lines 342--343
-
- []
-
-[11]
-Underfull \hbox (badness 10000) in paragraph at lines 355--356
+Underfull \hbox (badness 10000) in paragraph at lines 336--337
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 357--358
+Underfull \hbox (badness 10000) in paragraph at lines 343--344
 
  []
 
-Missing character: There is no « in font cmr12!
-Missing character: There is no » in font cmr12!
-
-Underfull \hbox (badness 10000) in paragraph at lines 359--360
-
- []
-
-Missing character: There is no « in font cmr12!
-Missing character: There is no » in font cmr12!
 [12]
-Underfull \hbox (badness 10000) in paragraph at lines 368--373
+Underfull \hbox (badness 10000) in paragraph at lines 356--357
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 368--373
+Underfull \hbox (badness 10000) in paragraph at lines 358--359
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 360--361
 
  []
 
 [13]
+Underfull \hbox (badness 10000) in paragraph at lines 369--374
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 369--374
+
+ []
+
+[14]
 Chapitre 2.
 
-Overfull \hbox (4.64243pt too wide) in paragraph at lines 390--391
+Overfull \hbox (4.64243pt too wide) in paragraph at lines 391--392
 \OT1/cmr/m/n/12 d'integrer de nou-velles fonc-tion-na-lites, de mettre a jou
 r les evolutions a la de-mande des differentes
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 390--391
+Underfull \hbox (badness 10000) in paragraph at lines 391--392
 
  []
 
 Missing character: There is no   in font cmr12!
 
-Underfull \hbox (badness 10000) in paragraph at lines 392--394
+Underfull \hbox (badness 10000) in paragraph at lines 393--395
 
  []
 
 
-Overfull \hbox (16.15753pt too wide) in paragraph at lines 392--394
+Overfull \hbox (16.15753pt too wide) in paragraph at lines 393--395
 \OT1/cmr/m/n/12 En in-for-ma-tique aussi, $[]$ \OT1/cmr/bx/n/12 La theorie
  []
 
-[14
+[15
 
-] <images/pfe_nv/cucumber.png, id=65, 1472.50125pt x 513.92pt>
+] <images/pfe_nv/cucumber.png, id=68, 1472.50125pt x 513.92pt>
 File: images/pfe_nv/cucumber.png Graphic file (type png)
 
 <use images/pfe_nv/cucumber.png>
-Package pdftex.def Info: images/pfe_nv/cucumber.png used on input line 401.
+Package pdftex.def Info: images/pfe_nv/cucumber.png used on input line 402.
 (pdftex.def)             Requested size: 91.04872pt x 31.77487pt.
 
-<images/pfe_nv/selenium.png, id=66, 372.39125pt x 360.34625pt>
+<images/pfe_nv/selenium.png, id=69, 372.39125pt x 360.34625pt>
 File: images/pfe_nv/selenium.png Graphic file (type png)
 
 <use images/pfe_nv/selenium.png>
-Package pdftex.def Info: images/pfe_nv/selenium.png used on input line 405.
+Package pdftex.def Info: images/pfe_nv/selenium.png used on input line 406.
 (pdftex.def)             Requested size: 39.83368pt x 38.54402pt.
 Missing character: There is no   in font cmr12!
 Missing character: There is no   in font cmr12!
@@ -863,11 +844,11 @@ Missing character: There is no   in font cmr12!
 Missing character: There is no   in font cmr12!
 Missing character: There is no   in font cmr12!
 
-<images/pfe_nv/java.png, id=67, 1204.5pt x 2242.3775pt>
+<images/pfe_nv/java.png, id=70, 1204.5pt x 2242.3775pt>
 File: images/pfe_nv/java.png Graphic file (type png)
 
 <use images/pfe_nv/java.png>
-Package pdftex.def Info: images/pfe_nv/java.png used on input line 409.
+Package pdftex.def Info: images/pfe_nv/java.png used on input line 410.
 (pdftex.def)             Requested size: 28.45274pt x 52.96617pt.
 Missing character: There is no   in font cmr12!
 Missing character: There is no   in font cmr12!
@@ -877,31 +858,25 @@ Missing character: There is no   in font cmr12!
 Missing character: There is no   in font cmr12!
 Missing character: There is no   in font cmr12!
 
-<images/pfe_nv/IntelliJ_IDEA.png, id=68, 1204.5pt x 1204.5pt>
+<images/pfe_nv/IntelliJ_IDEA.png, id=71, 1204.5pt x 1204.5pt>
 File: images/pfe_nv/IntelliJ_IDEA.png Graphic file (type png)
 
 <use images/pfe_nv/IntelliJ_IDEA.png>
-Package pdftex.def Info: images/pfe_nv/IntelliJ_IDEA.png used on input line 416
+Package pdftex.def Info: images/pfe_nv/IntelliJ_IDEA.png used on input line 417
 .
 (pdftex.def)             Requested size: 42.67912pt x 42.67642pt.
 Missing character: There is no   in font cmr12!
 Missing character: There is no   in font cmr12!
 Missing character: There is no   in font cmr12!
 Missing character: There is no   in font cmr12!
-
-Overfull \hbox (45.42305pt too wide) in paragraph at lines 416--418
-[][] \OT1/cmr/m/n/12 Est un en-vi-ron-ne-ment de developpement integrede tec
-h-no-lo-gie-Ja-va-des-tine au developpement
- []
-
-[15 <./images/pfe_nv/cucumber.png> <./images/pfe_nv/selenium.png> <./images/pfe
-_nv/java.png> <./images/pfe_nv/IntelliJ_IDEA.png>]
-<images/pfe_nv/Architecture_nv.png, id=76, 901.86937pt x 426.84468pt>
+ [16 <./images/pfe_nv/cucumber.png> <./images/pfe_nv/selenium.png> <./images/pf
+e_nv/java.png> <./images/pfe_nv/IntelliJ_IDEA.png>]
+<images/pfe_nv/Architecture_nv.png, id=79, 901.86937pt x 426.84468pt>
 File: images/pfe_nv/Architecture_nv.png Graphic file (type png)
 
 <use images/pfe_nv/Architecture_nv.png>
 Package pdftex.def Info: images/pfe_nv/Architecture_nv.png used on input line 4
-30.
+31.
 (pdftex.def)             Requested size: 426.79134pt x 201.9978pt.
 Missing character: There is no « in font cmbx12!
 Missing character: There is no » in font cmbx12!
@@ -909,74 +884,102 @@ Missing character: There is no   in font cmr12!
 Missing character: There is no   in font cmr12!
 Missing character: There is no   in font cmr12!
 Missing character: There is no   in font cmr12!
-
-Underfull \hbox (badness 10000) in paragraph at lines 437--440
-
- []
-
-[16 <./images/pfe_nv/Architecture_nv.png>]
-<images/pfe_nv/MaitreDouvrageForm.png, id=81, 771.63281pt x 285.31593pt>
+ [17 <./images/pfe_nv/Architecture_nv.png>] <images/pfe_nv/MaitreDouvrageForm.p
+ng, id=84, 771.63281pt x 285.31593pt>
 File: images/pfe_nv/MaitreDouvrageForm.png Graphic file (type png)
 
 <use images/pfe_nv/MaitreDouvrageForm.png>
 Package pdftex.def Info: images/pfe_nv/MaitreDouvrageForm.png used on input lin
-e 445.
+e 447.
 (pdftex.def)             Requested size: 455.24408pt x 168.32623pt.
 
-<images/pfe_nv/Invalide_Birth_Day.png, id=82, 374.14781pt x 339.51843pt>
+<images/pfe_nv/Invalide_Birth_Day.png, id=85, 381.67593pt x 325.96782pt>
 File: images/pfe_nv/Invalide_Birth_Day.png Graphic file (type png)
 
 <use images/pfe_nv/Invalide_Birth_Day.png>
 Package pdftex.def Info: images/pfe_nv/Invalide_Birth_Day.png used on input lin
-e 446.
-(pdftex.def)             Requested size: 284.52756pt x 258.20764pt.
+e 448.
+(pdftex.def)             Requested size: 284.52756pt x 243.00797pt.
 Missing character: There is no « in font cmbx12!
 Missing character: There is no » in font cmbx12!
 Missing character: There is no « in font cmbx12!
 Missing character: There is no » in font cmbx12!
 
-Underfull \hbox (badness 10000) in paragraph at lines 454--460
+Underfull \hbox (badness 10000) in paragraph at lines 456--462
 
  []
 
-[17 <./images/pfe_nv/MaitreDouvrageForm.png> <./images/pfe_nv/Invalide_Birth_Da
+
+Underfull \hbox (badness 10000) in paragraph at lines 456--462
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 456--462
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 456--462
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 456--462
+
+ []
+
+[18 <./images/pfe_nv/MaitreDouvrageForm.png> <./images/pfe_nv/Invalide_Birth_Da
 y.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 461--462
+Underfull \hbox (badness 10000) in paragraph at lines 463--464
 
  []
 
-<images/pfe_nv/dashboard.png, id=88, 1145.78062pt x 504.38437pt>
+<images/pfe_nv/dashboard.png, id=92, 1145.78062pt x 504.38437pt>
 File: images/pfe_nv/dashboard.png Graphic file (type png)
 
 <use images/pfe_nv/dashboard.png>
-Package pdftex.def Info: images/pfe_nv/dashboard.png used on input line 467.
+Package pdftex.def Info: images/pfe_nv/dashboard.png used on input line 469.
 (pdftex.def)             Requested size: 426.79134pt x 187.88148pt.
- [18 <./images/pfe_nv/dashboard.png>]
-<images/pfe_nv/plusieurs_tests.png, id=94, 957.5775pt x 243.15843pt>
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 474--478
+
+ []
+
+[19] <images/pfe_nv/plusieurs_tests.png, id=96, 957.5775pt x 243.15843pt>
 File: images/pfe_nv/plusieurs_tests.png Graphic file (type png)
 
 <use images/pfe_nv/plusieurs_tests.png>
 Package pdftex.def Info: images/pfe_nv/plusieurs_tests.png used on input line 4
-79.
+81.
 (pdftex.def)             Requested size: 455.24408pt x 115.60162pt.
 
-<images/pfe_nv/rapport_test.png, id=95, 1148.79187pt x 578.91281pt>
+<images/pfe_nv/rapport_test.png, id=97, 1148.79187pt x 578.91281pt>
 File: images/pfe_nv/rapport_test.png Graphic file (type png)
 
 <use images/pfe_nv/rapport_test.png>
-Package pdftex.def Info: images/pfe_nv/rapport_test.png used on input line 488.
+Package pdftex.def Info: images/pfe_nv/rapport_test.png used on input line 490.
 
-(pdftex.def)             Requested size: 284.52756pt x 143.37631pt.
- [19 <./images/pfe_nv/plusieurs_tests.png> <./images/pfe_nv/rapport_test.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 504--507
+(pdftex.def)             Requested size: 426.79134pt x 215.0689pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[20 <./images/pfe_nv/dashboard.png> <./images/pfe_nv/plusieurs_tests.png>]
+[21 <./images/pfe_nv/rapport_test.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 509--513
 
  []
 
-<images/pfe_nv/nikto.png, id=101, 209.78375pt x 388.45125pt>
+<images/pfe_nv/nikto.png, id=107, 209.78375pt x 388.45125pt>
 File: images/pfe_nv/nikto.png Graphic file (type png)
 
 <use images/pfe_nv/nikto.png>
-Package pdftex.def Info: images/pfe_nv/nikto.png used on input line 509.
+Package pdftex.def Info: images/pfe_nv/nikto.png used on input line 515.
 (pdftex.def)             Requested size: 42.67912pt x 79.02843pt.
 Missing character: There is no   in font cmr12!
 Missing character: There is no   in font cmr12!
@@ -989,156 +992,318 @@ Missing character: There is no   in font cmr12!
 Missing character: There is no   in font cmr12!
 Missing character: There is no   in font cmr12!
 Missing character: There is no   in font cmr12!
- [20 <./images/pfe_nv/nikto.png>]
-<images/pfe_nv/wapiti_400.png, id=106, 741.23077pt x 767.17384pt>
+
+<images/pfe_nv/wapiti_400.png, id=108, 741.23077pt x 767.17384pt>
 File: images/pfe_nv/wapiti_400.png Graphic file (type png)
 
 <use images/pfe_nv/wapiti_400.png>
-Package pdftex.def Info: images/pfe_nv/wapiti_400.png used on input line 515.
+Package pdftex.def Info: images/pfe_nv/wapiti_400.png used on input line 521.
 (pdftex.def)             Requested size: 71.13188pt x 73.61975pt.
 Missing character: There is no   in font cmr12!
 Missing character: There is no   in font cmr12!
-
-<images/pfe_nv/wapiti_copie_vulnerable.png, id=107, 776.9025pt x 651.93562pt>
+ [22 <./images/pfe_nv/nikto.png>]
+<images/pfe_nv/wapiti_copie_vulnerable.png, id=113, 776.9025pt x 651.93562pt>
 File: images/pfe_nv/wapiti_copie_vulnerable.png Graphic file (type png)
 
 <use images/pfe_nv/wapiti_copie_vulnerable.png>
 Package pdftex.def Info: images/pfe_nv/wapiti_copie_vulnerable.png used on inpu
-t line 529.
+t line 535.
 (pdftex.def)             Requested size: 284.52756pt x 238.76526pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[21 <./images/pfe_nv/wapiti_400.png>]
-<images/pfe_nv/html_report_wapiti_vulnerable.png, id=112, 523.20468pt x 368.125
+
+<images/pfe_nv/html_report_wapiti_vulnerable.png, id=114, 523.20468pt x 368.125
 3pt>
 File: images/pfe_nv/html_report_wapiti_vulnerable.png Graphic file (type png)
  <use images/pfe_nv/html_report_wapiti_vulnerable.png>
 Package pdftex.def Info: images/pfe_nv/html_report_wapiti_vulnerable.png used o
-n input line 538.
+n input line 544.
 (pdftex.def)             Requested size: 284.52756pt x 200.1946pt.
- [22 <./images/pfe_nv/wapiti_copie_vulnerable.png> <./images/pfe_nv/html_report
-_wapiti_vulnerable.png>]
-<images/pfe_nv/RapportHTML_NiktoVulnerable.png, id=118, 526.21594pt x 383.93437
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[23 <./images/pfe_nv/wapiti_400.png>]
+<images/pfe_nv/RapportHTML_NiktoVulnerable.png, id=119, 526.21594pt x 383.93437
 pt>
 File: images/pfe_nv/RapportHTML_NiktoVulnerable.png Graphic file (type png)
  <use images/pfe_nv/RapportHTML_NiktoVulnerable.png>
 Package pdftex.def Info: images/pfe_nv/RapportHTML_NiktoVulnerable.png used on 
-input line 548.
+input line 554.
 (pdftex.def)             Requested size: 227.62204pt x 166.07861pt.
 
-<images/pfe_nv/resume.png, id=119, 606.76688pt x 457.71pt>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[24 <./images/pfe_nv/wapiti_copie_vulnerable.png> <./images/pfe_nv/html_report_
+wapiti_vulnerable.png>]
+<images/pfe_nv/resume.png, id=126, 606.76688pt x 457.71pt>
 File: images/pfe_nv/resume.png Graphic file (type png)
 
 <use images/pfe_nv/resume.png>
-Package pdftex.def Info: images/pfe_nv/resume.png used on input line 560.
+Package pdftex.def Info: images/pfe_nv/resume.png used on input line 566.
 (pdftex.def)             Requested size: 199.16928pt x 150.2416pt.
 
-<images/pfe_nv/nikto_urba.png, id=120, 574.39594pt x 295.1025pt>
+<images/pfe_nv/nikto_urba.png, id=127, 574.39594pt x 295.1025pt>
 File: images/pfe_nv/nikto_urba.png Graphic file (type png)
 
 <use images/pfe_nv/nikto_urba.png>
-Package pdftex.def Info: images/pfe_nv/nikto_urba.png used on input line 561.
+Package pdftex.def Info: images/pfe_nv/nikto_urba.png used on input line 567.
 (pdftex.def)             Requested size: 227.62204pt x 116.94019pt.
- [23 <./images/pfe_nv/RapportHTML_NiktoVulnerable.png> <./images/pfe_nv/resume.
+Missing character: There is no û in font cmr12!
+ [25 <./images/pfe_nv/RapportHTML_NiktoVulnerable.png> <./images/pfe_nv/resume.
 png> <./images/pfe_nv/nikto_urba.png>]
-[24]
-Chapitre 3.
-Missing character: There is no   in font cmr12!
-<images/pfe_nv/gitlogo.jpg, id=131, 219.95218pt x 219.95218pt>
-File: images/pfe_nv/gitlogo.jpg Graphic file (type jpg)
+<images/pfe_nv/sonarqubelogo.png, id=134, 568.1225pt x 207.77625pt>
+File: images/pfe_nv/sonarqubelogo.png Graphic file (type png)
 
-<use images/pfe_nv/gitlogo.jpg>
-Package pdftex.def Info: images/pfe_nv/gitlogo.jpg used on input line 574.
-(pdftex.def)             Requested size: 71.13188pt x 71.1312pt.
+<use images/pfe_nv/sonarqubelogo.png>
+Package pdftex.def Info: images/pfe_nv/sonarqubelogo.png used on input line 577
+.
+(pdftex.def)             Requested size: 142.26378pt x 52.02953pt.
+Missing character: There is no « in font cmr12!
+Missing character: There is no » in font cmr12!
+ [26 <./images/pfe_nv/sonarqubelogo.png>]
+<images/pfe_nv/homePage_sonarqube.png, id=139, 1034.36438pt x 345.54094pt>
+File: images/pfe_nv/homePage_sonarqube.png Graphic file (type png)
 
-Underfull \hbox (badness 10000) in paragraph at lines 574--575
+<use images/pfe_nv/homePage_sonarqube.png>
+Package pdftex.def Info: images/pfe_nv/homePage_sonarqube.png used on input lin
+e 585.
+(pdftex.def)             Requested size: 455.24408pt x 152.08066pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 590--596
 
  []
 
-<images/pfe_nv/gitlab.png, id=132, 158.0304pt x 145.9854pt> [25
+
+Underfull \hbox (badness 10000) in paragraph at lines 590--596
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 590--596
+
+ []
+
+<images/pfe_nv/overview_sonarqube.png, id=140, 1026.83624pt x 511.15968pt>
+File: images/pfe_nv/overview_sonarqube.png Graphic file (type png)
+
+<use images/pfe_nv/overview_sonarqube.png>
+Package pdftex.def Info: images/pfe_nv/overview_sonarqube.png used on input lin
+e 599.
+(pdftex.def)             Requested size: 512.1496pt x 254.94743pt.
+
+Overfull \hbox (28.45273pt too wide) in paragraph at lines 599--600
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[27 <./images/pfe_nv/homePage_sonarqube.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 608--612
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 608--612
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 608--612
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 608--612
+
+ []
+
+[28 <./images/pfe_nv/overview_sonarqube.png>]
+<images/pfe_nv/vulnerabilities_sonrqube.png, id=149, 1128.46594pt x 536.75531pt
+>
+File: images/pfe_nv/vulnerabilities_sonrqube.png Graphic file (type png)
+ <use images/pfe_nv/vulnerabilities_sonrqube.png>
+Package pdftex.def Info: images/pfe_nv/vulnerabilities_sonrqube.png used on inp
+ut line 616.
+(pdftex.def)             Requested size: 426.79134pt x 203.00269pt.
+
+<images/pfe_nv/sql_injection_sonarqube.png, id=150, 1048.66782pt x 524.71031pt>
+File: images/pfe_nv/sql_injection_sonarqube.png Graphic file (type png)
+<use images/pfe_nv/sql_injection_sonarqube.png>
+Package pdftex.def Info: images/pfe_nv/sql_injection_sonarqube.png used on inpu
+t line 626.
+(pdftex.def)             Requested size: 426.79134pt x 213.54733pt.
+
+<images/pfe_nv/owasp.png, id=151, 790.955pt x 434.62375pt>
+File: images/pfe_nv/owasp.png Graphic file (type png)
+
+<use images/pfe_nv/owasp.png>
+Package pdftex.def Info: images/pfe_nv/owasp.png used on input line 635.
+(pdftex.def)             Requested size: 113.81102pt x 62.53801pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 631--636
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 631--636
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 631--636
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 631--636
+
+ []
+
+[29 <./images/pfe_nv/vulnerabilities_sonrqube.png> <./images/pfe_nv/sql_injecti
+on_sonarqube.png>]
+<images/qualityGates.png, id=157, 1028.34187pt x 529.22719pt>
+File: images/qualityGates.png Graphic file (type png)
+
+<use images/qualityGates.png>
+Package pdftex.def Info: images/qualityGates.png used on input line 644.
+(pdftex.def)             Requested size: 369.88582pt x 190.36012pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[30 <./images/pfe_nv/owasp.png>]
+<images/sonarquberules.png, id=163, 1018.55531pt x 576.65437pt>
+File: images/sonarquberules.png Graphic file (type png)
+
+<use images/sonarquberules.png>
+Package pdftex.def Info: images/sonarquberules.png used on input line 655.
+(pdftex.def)             Requested size: 369.88582pt x 209.408pt.
+ [31 <./images/qualityGates.png> <./images/sonarquberules.png>] <images/overvie
+wGis.png, id=169, 1003.49907pt x 511.15968pt>
+File: images/overviewGis.png Graphic file (type png)
+
+<use images/overviewGis.png>
+Package pdftex.def Info: images/overviewGis.png used on input line 666.
+(pdftex.def)             Requested size: 483.69684pt x 246.3834pt.
+ [32 <./images/overviewGis.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 679--682
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 679--682
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 683--687
+
+ []
+
+<images/pfe_nv/JMeter.png, id=174, 513.92pt x 174.6525pt>
+File: images/pfe_nv/JMeter.png Graphic file (type png)
+
+<use images/pfe_nv/JMeter.png>
+Package pdftex.def Info: images/pfe_nv/JMeter.png used on input line 689.
+(pdftex.def)             Requested size: 113.81102pt x 38.67683pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 689--692
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 689--692
+
+ []
+
+[33] <images/pfe_nv/blazemeter.png, id=178, 602.25pt x 71.26625pt>
+File: images/pfe_nv/blazemeter.png Graphic file (type png)
+
+<use images/pfe_nv/blazemeter.png>
+Package pdftex.def Info: images/pfe_nv/blazemeter.png used on input line 693.
+(pdftex.def)             Requested size: 113.81102pt x 13.46677pt.
+ [34 <./images/pfe_nv/JMeter.png> <./images/pfe_nv/blazemeter.png>]
+Chapitre 3.
+Missing character: There is no   in font cmr12!
+<images/pfe_nv/gitlogo.jpg, id=184, 219.95218pt x 219.95218pt>
+File: images/pfe_nv/gitlogo.jpg Graphic file (type jpg)
+
+<use images/pfe_nv/gitlogo.jpg>
+Package pdftex.def Info: images/pfe_nv/gitlogo.jpg used on input line 704.
+(pdftex.def)             Requested size: 71.13188pt x 71.1312pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 704--705
+
+ []
+
+<images/pfe_nv/gitlab.png, id=185, 158.0304pt x 145.9854pt> [35
 
  <./images/pfe_nv/gitlogo.jpg>]
 File: images/pfe_nv/gitlab.png Graphic file (type png)
  <use images/pfe_nv/gitlab.png>
-Package pdftex.def Info: images/pfe_nv/gitlab.png used on input line 576.
+Package pdftex.def Info: images/pfe_nv/gitlab.png used on input line 706.
 (pdftex.def)             Requested size: 71.13188pt x 65.71286pt.
 Missing character: There is no É in font cmr12!
 Missing character: There is no « in font cmr12!
 Missing character: There is no » in font cmr12!
- [26 <./images/pfe_nv/gitlab.png>] <images/pfe_nv/deploiementcontinucicd.png, i
-d=140, 720.6925pt x 292.09125pt>
+ [36 <./images/pfe_nv/gitlab.png>] <images/pfe_nv/deploiementcontinucicd.png, i
+d=194, 720.6925pt x 292.09125pt>
 File: images/pfe_nv/deploiementcontinucicd.png Graphic file (type png)
 
 <use images/pfe_nv/deploiementcontinucicd.png>
 Package pdftex.def Info: images/pfe_nv/deploiementcontinucicd.png used on input
- line 595.
+ line 725.
 (pdftex.def)             Requested size: 312.9803pt x 126.84473pt.
- [27 <./images/pfe_nv/deploiementcontinucicd.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 604--610
+ [37 <./images/pfe_nv/deploiementcontinucicd.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 734--740
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 604--610
+Underfull \hbox (badness 10000) in paragraph at lines 734--740
 
  []
 
 Missing character: There is no « in font cmr12!
 Missing character: There is no » in font cmr12!
 
-Underfull \hbox (badness 10000) in paragraph at lines 611--613
+Underfull \hbox (badness 10000) in paragraph at lines 741--743
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 613--615
+Underfull \hbox (badness 10000) in paragraph at lines 743--745
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 615--616
+Underfull \hbox (badness 10000) in paragraph at lines 745--746
 
  []
 
-[28]
-Underfull \hbox (badness 10000) in paragraph at lines 616--617
+[38]
+Underfull \hbox (badness 10000) in paragraph at lines 746--747
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 619--620
-
- []
-
-<images/pfe_nv/pipl.png, id=148, 836.3747pt x 366.61969pt>
-File: images/pfe_nv/pipl.png Graphic file (type png)
-
-<use images/pfe_nv/pipl.png>
-Package pdftex.def Info: images/pfe_nv/pipl.png used on input line 623.
-(pdftex.def)             Requested size: 512.1496pt x 224.51036pt.
-
-Overfull \hbox (28.45273pt too wide) in paragraph at lines 623--624
- [][] 
- []
-
-[29 <./images/pfe_nv/pipl.png>] (rapport_pfe_v2.aux)
+[39] (rapport_pfe_v2.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-
-LaTeX Warning: There were multiply-defined labels.
-
  ) 
 Here is how much of TeX's memory you used:
- 14798 strings out of 493335
- 277610 string characters out of 3139269
- 324625 words of memory out of 3000000
- 17987 multiletter control sequences out of 15000+200000
- 13595 words of font info for 51 fonts, out of 3000000 for 9000
+ 14874 strings out of 493335
+ 279504 string characters out of 3139269
+ 324714 words of memory out of 3000000
+ 18052 multiletter control sequences out of 15000+200000
+ 16214 words of font info for 64 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,13n,54p,805b,515s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 55i,12n,54p,1054b,501s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbxsl10.pfb><C:/Program 
 Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Program Files/M
@@ -1148,9 +1313,9 @@ pe1/public/amsfonts/cm/cmsl12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
 ic/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfo
 nts/cm/cmti12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symb
 ols/msam10.pfb>
-Output written on rapport_pfe_v2.pdf (30 pages, 1440218 bytes).
+Output written on rapport_pfe_v2.pdf (40 pages, 1821123 bytes).
 PDF statistics:
- 182 PDF objects out of 1000 (max. 8388607)
+ 236 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 128 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 178 words of extra memory for PDF output out of 10000 (max. 10000000)
 

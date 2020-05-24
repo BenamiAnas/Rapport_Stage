@@ -1,15 +1,21 @@
 \select@language {french}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Diagramme de Classe [ Architecture ] }}{16}
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Scenario Utilisateur entre une date de naissance invalide [ Plateforme Rokhas ] }}{17}
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Rapport du sc\'enario [ Attachements des documents PH ] }}{18}
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Rapport des sc\'enarios de [ Localisation du projet ] }}{19}
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Rapport d'un sc\'enario qui a \'echouer [ Capture d'\'ecran ] }}{19}
-\contentsline {figure}{\numberline {2.6}{\ignorespaces Output de la commande de test de vuln\'erabilit\'es [ Wapiti] }}{22}
-\contentsline {figure}{\numberline {2.7}{\ignorespaces Rapport g\'en\'er\'e par Wapiti }}{22}
-\contentsline {figure}{\numberline {2.8}{\ignorespaces Rapport g\'en\'er\'e par Nikto }}{23}
-\contentsline {figure}{\numberline {2.9}{\ignorespaces Rapports Plateforme Rokhas [0 vuln\'erabilit\'es]}}{23}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Diagramme de Classe [ Architecture ] }}{17}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Scenario Utilisateur entre une date de naissance invalide [ Plateforme Rokhas ] }}{18}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Rapport du sc\'enario [ Attachements des documents PH ] }}{20}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Rapport des sc\'enarios de [ Localisation du projet ] }}{20}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Rapport d'un sc\'enario qui a \'echouer [ Capture d'\'ecran ] }}{21}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Output de la commande de test de vuln\'erabilit\'es [ Wapiti] }}{24}
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Rapport g\'en\'er\'e par Wapiti }}{24}
+\contentsline {figure}{\numberline {2.8}{\ignorespaces Rapport g\'en\'er\'e par Nikto }}{25}
+\contentsline {figure}{\numberline {2.9}{\ignorespaces Rapports Plateforme Rokhas [0 vuln\'erabilit\'es]}}{25}
+\contentsline {figure}{\numberline {2.10}{\ignorespaces HOME page SonareQube }}{27}
+\contentsline {figure}{\numberline {2.11}{\ignorespaces Aper\c {c}u SonareQube }}{28}
+\contentsline {figure}{\numberline {2.12}{\ignorespaces Probl\`emes SonareQube }}{29}
+\contentsline {figure}{\numberline {2.13}{\ignorespaces Les Points d'acc\`es de s\'ecurit\'e SonareQube }}{29}
+\contentsline {figure}{\numberline {2.14}{\ignorespaces Quality Gates SonareQube }}{31}
+\contentsline {figure}{\numberline {2.15}{\ignorespaces Rules SonareQube }}{31}
+\contentsline {figure}{\numberline {2.16}{\ignorespaces Scan du code source de l'entreprise }}{32}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Int\'egration/Livraison/D\'eploiment Continue}}{27}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Exemple d'une pipline}}{29}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Int\'egration/Livraison/D\'eploiment Continue}}{37}

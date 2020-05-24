@@ -203,32 +203,33 @@
 			
 		\end{center}
 		\begin{center}
-			\textsc{\LARGE Faculté des sciences et technique Mohammedia}\\[0.4cm]
+			\textsc{\LARGE Faculté des sciences et techniques Mohammedia}\\[0.4cm]
 			\textsc{\Large Rapport de stage }\\[0.3cm]
-			{ \LARGE \bfseries CONCEPTION ET D\'EVELEPPEMENT DE TESTS AUTOMATIQUES (NON R\'EGRESSION, S\'ECURIT\'E ET PERFORMANCE) ET SON INT\'EGRATION DANS LA CHAINE CI/CD DE GitLab \\ }
-			\bigskip
-			\bigskip
-			
-			
 			\begin{center}
-				\textsc{	\emph{FI : Génie Mathématiques et  informatique Année universitaire: 2019/2020}}
+				\textsc{	\emph{3éme année FI : Génie Mathématiques et  informatique Année universitaire: 2019/2020}}
 				
 			\end{center}
+			{ \LARGE \bfseries CONCEPTION ET D\'EVELOPPEMENT DE TESTS AUTOMATIQUES (NON R\'EGRESSION, S\'ECURIT\'E ET PERFORMANCE) ET SON INT\'EGRATION DANS LA CHAINE CI/CD DE GitLab \\ }
+			\bigskip
+			\bigskip
+			
+			
+			
 			
 			\bigskip
 			\begin{minipage}{0.8\textwidth}
-				\begin{flushleft} \large
-					Réalisé par:\\
-					BENAMI Anas [ élève ingénieur ]
-					
+				\begin{flushleft} \textbf{\underline{Réalisé par:}
+						}\\
+					BENAMI Anas [ élève ingénieur ]\\
+					\textbf{\underline{Encadré par:}}\\
+					M. \hspace{0.1cm}KHACHAFI Elmahdi [à remplir ]\\
+					M. \hspace{0.1cm}Khadir Omar[ Professeur à la FST de Mohammedia ]
 				\end{flushleft}
 			\end{minipage}
-			
-			\begin{flushright}
-				\vspace{1cm}	\emph{Encadré par:\\
-					M. \hspace{0.2cm}KHACHAFI Elmahdi\\
-					M. \hspace{0.2cm}Khadir Omar}
-			\end{flushright}
+			\bigskip
+			\begin{flushleft}
+				\vspace{1cm}	\emph{}
+			\end{flushleft}
 			
 			
 			
@@ -254,23 +255,23 @@
 	
 	\vspace{5cm}
 	Je dédie ce travail à ma famille qui ne cesse pas de m'encourager et me donner le soutien moral et matériel,  à mes amis et à tous ceux qui ont croisé mon chemin et laisser de belles traces sur ma vie.
-	\chapter*{Remerciement}
-	D'un esprit vivement reconnaissant, je tiens à  remercier chaleureusement, mon encadrant  M.  {\bfseries KHACHAFI Elmahdi},  pour le temps qu'il a consacré à m'apporter les outils méthodologiques indispensables à la conduite de ce modeste travail . Son exigence m'a grandement stimulé.\\
-	mes vifs remerciements vont également à M. {\bfseries Khadir Omar}  pour sa patience, ses conseils pleins de sens et pour le suivi et l'intérêt qu'il a porté à mon travail. L'ensemble des collègues de classe pour leurs intérêts et leurs encouragements.\\\\
+	\chapter*{Remerciements}
+	Je tiens à  remercier chaleureusement, mon encadrant  M.  {\bfseries KHACHAFI Elmahdi}[poste à ajouter],  pour le temps qu'il a consacré à m'apporter les outils méthodologiques indispensables à la conduite de ce modeste travail . Son exigence m'a grandement stimulé.\\
+	Mes vifs remerciements vont également à M. {\bfseries Khadir Omar}[Professeur à la FST de Mohammedia]  pour sa patience, ses conseils pleins de sens et pour le suivi et l'intérêt qu'il a porté à mon travail. L'ensemble des camarades de classe pour leurs intérêts et leurs encouragements.\\\\
 	Je remercie également les membres du jury pour l'intérêt qu'ils ont porté à mon projet en acceptant d'examiner mon travail et de l'enrichir par leurs propositions.
-	Aussi mes remerciements au corps professoral et administratif de la faculté des sciences et techniques qui déploient de grands efforts pour nous assurer une très bonne formation.
+	Aussi mes remerciements au corps professoral et administratif de la faculté des sciences et techniques de Mohammedia qui déploient de grands efforts pour nous assurer une très bonne formation.
 	\tableofcontents
 	\listoffigures
 	
 	\chapter*{\textbf{Introduction Générale}}
 	\textbf
-	De nos jours le développement des applications et logiciels sont en constante évolution. Les entreprises pensent alors à gagner en temps et en performances afin d'automatiser la procédure de tests logiciels , car la phase de test est une étape incontournable de tout développement informatique,elle a pour objectif de vérifier que le livrable répond bien aux besoins exprimés par l'utilisateur.
+	De nos jours le développement des applications et logiciels sont en constante évolution. Les entreprises pensent alors à gagner en temps et en performances afin d'automatiser la procédure de tests logiciels, car la phase de test est une étape incontournable de tout développement informatique, elle a pour objectif de vérifier que le livrable répond bien aux besoins exprimés par l'utilisateur.
 	
 	Un test est un ensemble de cas à tester pour effectuer une vérification partielle d'un système. Il vise à trouver des bugs.
 	Le but principal est d'identifier un nombre maximum d'anomalies du logiciel dans une courte durée avant livrée les produits aux clients. La qualité sera donc augmentée lorsque les problèmes seront corrigés.
 	
-	Les tests représentent 30 à 50\% du co\^ut de développement, et pour les faire chaque fois d'une manière manuelle c'est lourd premièrement ,et deuxièmement il prend beaucoup du temps et risquer car il se fait par un être humain,ceci est un grand problème.
-	L'automatisation des tests est une solution qui permet de réduire la charge de travail et le temps passé à exécuter des tests de logiciels.C'est à dire gain en temps et en productivité.\\
+	Les tests représentent 30 à 50\% du co\^ut de développement, et pour les faire chaque fois d'une manière manuelle c'est lourd premièrement, et deuxièmement il prend beaucoup du temps et risquer car il se fait par un être humain, ceci est un grand problème.
+	L'automatisation des tests est une solution qui permet de réduire la charge de travail et le temps passé à exécuter des tests de logiciels. C'est à dire gain en temps et en productivité.\\
 	Elle permet aux testeurs de se concentrer sur les tests des nouvelles fonctionnalités de l'application avec une meilleure fiabilité ainsi que de minimiser les risques d'erreurs.
 	
 	L'automatisation des tests logiciels présente de nombreux avantages :
@@ -279,7 +280,7 @@
 	
 	$\bullet $ Réutilisables : Une fois écrit par un ingénieur QA (Quality Assurance), les tests peuvent être utilisés encore et encore, à l'infini. Les mêmes modules peuvent être réutilisés pour d'autres tests sur le projet.
 	
-	$\bullet $ Excellente couverture : Grâce à l'automatisation,On peut couvrir un grand nombre de variantes de cas de test. Cela inclut l'interaction avec plusieurs systèmes d'exploitation, navigateurs etc., ainsi que divers scénarios de comportement d'utilisateur, et bien plus encore. 
+	$\bullet $ Excellente couverture : Grâce à l'automatisation, On peut couvrir un grand nombre de variantes de cas de test. Cela inclut l'interaction avec plusieurs systèmes d'exploitation, navigateurs etc., ainsi que divers scénarios de comportement d'utilisateur, et bien plus encore. 
 	
 	$\bullet $ Rapports pratiques : La génération des journaux de tests prêts qui listent précisément tous les tests effectués et les bugs trouvés.
 	
@@ -302,11 +303,11 @@
 	\chapter{\textbf{Cadre Général} }
 	\section{Introduction: }
 	\textbf
-	Ce chapitre est consacré pour la présentation de l'organisme d'accueil, la précision du cadre du projet et la problématique puis l'énumération des étapes de travail à réaliser pour achever ce projet.
+	Ce chapitre est consacré à la présentation de l'organisme d'accueil, la précision du cadre du projet et la problématique puis l'énumération des étapes de travail à réaliser pour achever ce projet.
 	\section{Cadre du travail: }
 	\textbf
 	Ce stage s'inscrit dans le cadre d'un projet de fin d'études pour l'obtention du diplôme d'ingénieur mathématiques informatique de la Faculté des Sciences et Techniques Mohammedia. Mon stage a été effectué au sein d'une Société de conseil opérationnel en systèmes d'information (Ribatis). Le sujet est intitulé 
-	« Conception et développement de tests automatiques (non régression,sécurité et performance) et son intégration dans la chaine CI/CD de GitLab ».
+	« Conception et développement de tests automatiques (non régression, sécurité et performance) et son intégration dans la chaine CI/CD [l'intégration continue /livraison et déploiement continue] de GitLab ».
 	
 	\section{Présentation de l'organisme d'accueil}
 	\textbf
@@ -322,15 +323,15 @@
 		\item \underline{Métier :}\\
 		La mission au quotidien est de veiller au bonheur de l'usager et du fonctionnaire en leur offrant une expérience digitale exceptionnelle. A travers les plateformes digitales qu'ils réalisent, ils visent une transformation radicalement positive de la relation citoyen/administration, en la convertissant en une relation de  collaboration plutôt qu'une relation de contrainte.
 		\item \underline{Approche :}\\
-		l' approche est simple : Proposer les Services e-Gov sous forme d'une succession d'étapes faisant intervenir tour à tour le fonctionnaire et l'usager.
+		L' approche est simple : Proposer les Services e-Gov sous forme d'une succession d'étapes faisant intervenir tour à tour le fonctionnaire et l'usager.
 		
-		Ainsi, au lieu d'avoir deux systèmes distincts : Le 1er servant à soumettre la demande usager (Interface externe) et le 2ème permettant à l'administration de la traiter (Interface interne), nos plateformes les fusionnent en un seul et même e-service. Ceci permet au fonctionnaire et à l?usager de collaborer autour d?un même processus avec comme objectif commun de mener à bien la procédure, tout en respectant la réglementation en vigueur, les limites de responsabilité et la traçabilité des actions.
+		Ainsi, au lieu d'avoir deux systèmes distincts : Le 1er servant à soumettre la demande usager (Interface externe) et le 2ème permettant à l'administration de la traiter (Interface interne), nos plateformes les fusionnent en un seul et même e-service. Ceci permet au fonctionnaire et à l'usager de collaborer autour d'un même processus avec comme objectif commun de mener à bien la procédure, tout en respectant la réglementation en vigueur, les limites de responsabilité et la traçabilité des actions.
 		
-		\item \underline{Les platformes : }\\
+		\item \underline{Les plateformes : }\\
 		\begin{itemize}
 			\item \textbf{CASAURBA :} Lancé en octobre 2014 et généralisée à la région Casablanca-Settat à fin 2015, Casaurba est une plateforme digitale collaborative assurant la gestion 100\% dématérialisée des autorisations d'urbanisme de +36 communes \\
 			\item \textbf{ROKHAS :} Lancée en Avril 2017, la plateforme Rokhas dématérialise la délivrance des autorisations économiques, en assurant l'équilibre entre développement économique et respect de l'environnement et de la vie en société.\\
-			\item \textbf{CasaOpenData :} Portail de données statistiques ouvertes, alimenté à partir des plateformes digitales Casaurba et Rokhas et publiant des indicateurs précis, actualisés au quotidien et conçus entant qu'outil d'aide à la décision et d'amélioration continue.\\
+			\item \textbf{CasaOpenData :} Portail de données statistiques ouvertes, alimenté à partir des plateformes digitales Casaurba et Rokhas et publiant des indicateurs précis, actualisés au quotidien et conçus en tant qu'outil d'aide à la décision et d'amélioration continue.\\
 			\item \textbf{KAFC/Jibayat :} La Plateforme Karaz Administration Fiscale Communale (KAFC) est une plateforme de getion globale et intégrée de l'ensemble des taxes, droits et redevances collectées au niveau des communes.\\
 			\item \textbf{GÉO HUB :} La plateforme Geohub.ma permet aux institutions, aux entreprises et aux individus de créer facilement et gratuitement leurs propres géoportails. Ils peuvent ainsi, créer, publier, actualiser et valoriser leurs données géographiques.\\
 			\item \textbf{PARAPHEURB :} Parapheur.ma est une plateforme cloud dédiée à la transformation digitale des circuits de signature au sein des administrations publiques et privées.
@@ -348,30 +349,30 @@
 	~~$\bullet$ Réduire la charge de travail et le temps passé à exécuter des tests fonctionnelles.\\
 	$\bullet$ Couvrir un grand nombre de variantes de cas de test.\\
 	$\bullet$ Repérer rapidement un bug pendant les cycles de développement.\\
-	$\bullet$ \'Eviter au maximum les erreurs humaine.
+	$\bullet$ \'Eviter au maximum les erreurs humaines.
 	\section{Plan de travail }
 	\subsection{Organisation du rapport}
 	
-	Pour un bon travail il faut un rapport bien structuré qui peut être exploité après la mise en place de ces tests, pour cela le présent rapport vas être organiser notre  de la manière suivante :\\
+	Pour un bon travail il faut un rapport bien structuré qui peut être exploité après la mise en place de ces tests, pour cela le présent rapport sera organisé de comme suit :\\
 	
 	Dans le premier chapitre, on a met notre projet dans son cadre général en définissant la société d'accueil et en présentant le sujet avec une étude préalable.\\
 	
-	Dans le deuxième chapitre intitulé « Conception et développement des tests », nous allons présenter en premier lieu les tests de (non régression, sécurité et performance) et en deuxième lieu les outils  et le principe de fonctionnement chaque test .\\
+	Dans le deuxième chapitre intitulé Conception et développement des tests, nous allons présenter en premier lieu les tests de (non régression, sécurité et performance) et en deuxième lieu le principe de fonctionnement et les outils de chaque test.\\
 	
 	Enfin et au niveau du troisième et dernier chapitre intitulé 
-	«L'intégration dans la chaine CI/CD de GitLab »,on vas présenter les différentes composantes de cette chaine et son rôle dans l'automatisation. 
+	L'intégration dans la chaine CI/CD  de GitLab, on vas présenter les différentes composantes de cette chaine et son rôle dans l'automatisation. 
 	
 	
 	
 	\subsection{Diagramme de Gantt}
 	\textbf
 	Le diagramme de Gantt est un outil de planification des tâches 
-	nécessaires pour la réalisation d'un projet quelque soit le secteur 
+	nécessaires pour la réalisation d'un projet quel que soit le secteur 
 	d'activité. Il permet de visualiser l'avancement des tâches d'un projet de 
 	manière simple et concise, de planifier et suivre les besoins en ressources 
 	humaines et matérielles et donc de pouvoir suivre l'avancement du projet.\\\\
 	
-	Le diagramme suivant va représenter les taches principales à 
+	Le diagramme suivant va représenter les tâches principales à 
 	réaliser dans le projet.
 	\begin{center}
 		Pas Encore
@@ -387,7 +388,7 @@
 	la problématique ainsi que les objectifs. Nous verrons comment implémenter ces différents types de test  dans le chapitre suivant.
 	\chapter{\textbf{Conception et développement des tests}}
 	\section{Introduction}
-	Les systèmes d'information sont amenés à évoluer régulièrement en raison de la nécessité d'intégrer de nouvelles fonctionnalités, de mettre à jour les évolutions à la demande des différentes entités métiers de l'entreprise. Les stratégies digitales accélèrent encore un peu plus les besoins de transformation des systèmes d'information qui doivent intégrer, de plus en plus, de fonctionnalités hétérogènes dans des délais de plus en plus bref.\\
+	Les systèmes d'information sont amenés à évoluer régulièrement en raison de la nécessité d'intégrer de nouvelles fonctionnalités, de mettre à jour les évolutions à la demande des différentes entités métiers de l'entreprise. Les stratégies digitales accélèrent encore un peu plus les besoins de transformation des systèmes d'information qui doivent intégrer, de plus en plus, de fonctionnalités hétérogènes dans des délais de plus en plus brefs.\\
 	
 	Comment dans ces conditions assurer la fiabilité des systèmes d'information ?\\\\
 	En informatique aussi, \textit{\underline{un battement d'ailes d'un papillon peut provoquer une tornade }} \textbf{La théorie de chaos} , il faut donc tester afin de vérifier que les modifications n'ont pas apporté d'instabilités ou d'anomalies, aux conséquences parfois imprévisibles.
@@ -403,26 +404,26 @@
 	
 	\subsubsection{Selenium}
 	\includegraphics[width=1.4cm]{images/pfe_nv/selenium.png}
-	est un  framework  de  test informatique développé en Java. Il permet d'interagir avec différents navigateurs web de même que le ferait un utilisateur de l'application. Il entre ainsi dans la catégorie des outils de test dynamique facilitant le test fonctionnel .
+	est un  framework  de  test informatique développé en  Java. Il permet d'interagir avec différents  navigateurs web  de même que le ferait un utilisateur de l'application. Il entre ainsi dans la catégorie des outils de test dynamique facilitant le test fonctionnel .
 	
 	\subsubsection{Langage de programation }
 	\includegraphics[width=1cm]{images/pfe_nv/java.png}
-	est un langage de programmation orienté objet
-	créé par James Gosling et Patrick Naughton, employés de Sun Microsystems.
+	est un  langage de programmation   orienté objet
+	créé par  James Gosling  et  Patrick Naughton, employés de  Sun Microsystems.
 	
-	La société Sun a été ensuite rachetée en 2009 par la société Oracle.
+	La société Sun a été ensuite rachetée en 2009 par la société  Oracle.
 	
 	\subsubsection{Environnement de développement }
 	\includegraphics[width=1.5cm]{images/pfe_nv/IntelliJ_IDEA.png}
-	Est un environnement de développement intégré de technologie Java destiné au développement de logiciels informatiques. Il est développé par JetBrains.
+	Est un environnement de développement intégré de technologie  Java  destiné au développement de logiciels informatiques. Il est développé par JetBrains.
 	
 	
 	\section{Conception}
 	
 	\subsection{Méthodologie de conception}
-	Pour faciliter la tâche on vas utiliser le langage de 
-	modélisation unifié (UML : Unified Modelling Language) c'est une notation  qui permet de modéliser un problème de façon standard. Ce langage est  né de la fusion de plusieurs méthodes existantes auparavant, et il est devenu un référence en terme de modélisation objet, à un tel point que sa connaissance devienne indispensable pour un développeur.
-	
+	Pour faciliter la tâche on va utiliser le langage de 
+	modélisation unifié (UML : Unified Modelling Language) c'est une notation  qui permet de modéliser un problème de façon standard. Ce langage est  né de la fusion de plusieurs méthodes existantes auparavant, et il est devenu un référence en terme de modélisation objet, à un tel point que sa connaissance devient indispensable pour un développeur.
+
 	\subsection{Architecture}
 	\begin{center}
 		\begin{figure}[!h]
@@ -434,10 +435,11 @@
 	\end{center}
 	
 	
-	D'abord on commence par la création d'un fichier avec l'extension \textbf{«.feature»} de Cucumber, dans lequel on écrit nos scénarios avec n'importe qu'elle langue (L'anglais, Le francais...),Chaque scénario est une liste d'étapes  à  suivre par  Cucumber.
+	D'abord on commence par la création d'un fichier avec l'extension \textbf{«.feature»} de Cucumber, dans lequel on écrit nos scénarios avec n'importe qu'elle langue (L'anglais, Le francais...), chaque scénario est une liste d'étapes  à  suivre  par  Cucumber.
 	Pour que Cucumber comprenne les scénarios, ils doivent suivre certaines règles de syntaxe de base, appelées  Gherkin.\\
 	\textbf{\underline{Exemple:}} \\
-	
+	Dans cet exemple on test le scénario dans lequel l'utilisateur saisi une date de naissance invalide (Dans le future).\\
+	J'ai choisi d'écrire le scénario en anglais, les mots en bleu sont les données de test. Dans le champs nom il va saisir Mahjoubi et pour le prénom il va écrire Fahd etc ... 
 	
 	\begin{center}
 		\begin{figure}[!h]
@@ -451,14 +453,14 @@
 	
 	
 	
-	La deuxième chose, on crée la classe \textbf{BasePage} (C'et une classe Java qui contient comme attributs les éléments web [Bouton,inputText,checkBox...  etc] de la page web qu'on veut tester) on récupèrent les éléments web à l'aide du framework Selenium.\\
-	\textbf{Nb} : Dans cet exemple les éléments sont les attributs du formulaire.\\
-	Après on crée La classe \textbf{«Step Definition»} qui est le coeur de notre travail. Dans cette classe on crée, pour chaque étape (instruction) du scénario, une méthode qui traduit les mots en code java en utilisant le framework Selelnium . \\
-	En fin on crée la classe \textbf{«Runner»} qui est responsable de lancement des scénarios a exécuter, En différencier entre les scénarios par l'annotation \textbf{@} Entéte de chaque scénario, dans notre cas le scénario s'appel InvalidDateOfBirth.\\ 
-	\textbf{Nb} : On peut lancé le nombre de scénarios qu'on veut.  \\
+	La deuxième chose, on crée la classe \textbf{BasePage} (C'est une classe Java qui contient comme attributs les éléments web [ Bouton, inputText,  checkBox...  etc ] de la page web qu'on veut tester) on récupère les éléments web à l'aide du framework Selenium.\\\\
+	\textbf{Nb} : Dans cet exemple les éléments sont les attributs du formulaire.\\\\
+	Après on crée la classe \textbf{«Step Definition»} qui est le coeur de notre travail. Dans cette classe on crée, pour chaque étape (instruction) du scénario, une méthode qui traduit les mots en code java en utilisant le framework Selelnium . \\\\
+	En fin on crée la classe \textbf{«Runner»} qui est responsable de lancement des scénarios a exécuter, En différencier entre les scénarios par l'annotation \textbf{@} Entéte de chaque scénario, dans notre cas le scénario s'appel InvalidDateOfBirth.\\\\ 
+	\textbf{Nb} : On peut lancer le nombre de scénarios qu'on veut.  \\
 	La classe \textbf{Commond Methodes} juste pour garder la notion du clean code. \\
 	\subsection{Génération des rapports :}
-	Cucumber nous aide beaucoup, car il nous donne la possibilité de générer des rapport avec différentes formats (HTML,json,xml,...) aprés chaque exécution du test. \\
+	Cucumber nous aide beaucoup, car il nous donne la possibilité de générer des rapport avec différentes formats ( HTML, json, xml ...) aprés chaque exécution du test. \\
 	
 	\textbf{Exemple: Un seul scénario} 
 		\begin{center}
@@ -466,28 +468,28 @@
 				\centering
 				\includegraphics[width=15cm]{images/pfe_nv/dashboard.png}
 				\caption{Rapport du scénario [ Attachements des documents PH ] }
-				\label{page4}
+				\label{page3}
 			\end{figure}
 		\end{center}
-	Comme vous voyez, on a les graphiques qui nous indique par pourcentage, le taux des étapes réussies [en vert], échouées [en rouge] et les étapes ignorées [en bleu].\\
+	Comme vous voyez, on a les graphiques qui nous indique par pourcentage, le taux des étapes réussies [ en vert ], échouées [ en rouge ] et les étapes ignorées [ en bleu ].\\
 	Il nous liste aussi tous les étapes du scénario et indique devant chaque étape [Pass, Fail ou bien Skip ].\\
-	\textbf{NB :} une fois Cucumber rencontre une étape échouée, il ignore toutes les étapes qui la suivent. \\
+	\textbf{NB :} une fois Cucumber rencontre une étape échouée, il ignore toutes les étapes qui la suivent. \\\\
 	\textbf{Exemple: Plusieurs scénarios} 
 		\begin{center}
 			\begin{figure}[!h]
 				\centering
 				\includegraphics[width=16cm]{images/pfe_nv/plusieurs_tests.png}
 				\caption{Rapport des scénarios de  [ Localisation du projet ] }
-				\label{page5}
+				\label{page4}
 			\end{figure}
 		\end{center}
 	En cas d'échec d'un test il fait une capture d'écran pour qu'on puisse savoir exactement qu'est ce qui est passé.	
 		\begin{center}
 			\begin{figure}[!h]
 				\centering
-				\includegraphics[width=10cm]{images/pfe_nv/rapport_test.png}
+				\includegraphics[width=15cm]{images/pfe_nv/rapport_test.png}
 				\caption{Rapport d'un scénario qui a échouer  [ Capture d'écran ] }
-				\label{page6}
+				\label{page5}
 			\end{figure}
 		\end{center}
 	\newpage
@@ -499,20 +501,20 @@
 	L'objectif principal des tests de sécurité est de déterminer les vulnérabilités d'un système et de déterminer si ses données et ses ressources sont protégées contre les intrus potentiels.
 	
 	\subsection{Les techniques typiques de test de sécurité d'application :}
-	\subsubsection*{DAST [Dynamic Application Security Testing]}
-	Un outil de test de sécurité d'application dynamique teste les applications et services Web en utilisant des attaques fictives via HTTP / HTTPS, semblable à ce qu'un pirate informatique ferait. Cette méthode est appelée test en boîte noire. Simplement, un scanner DAST n'a pas besoin d'avoir accès au code et au fonctionnement interne d'une application. En fait, il automatise ce qu'un pirate informatique ferait dans une application en direct. Ainsi, lorsqu'une vulnérabilité est trouvée, cela signifie généralement que la vulnérabilité pourrait être exploitée. Souvent, un bon scanner DAST montrera que la vulnérabilité est réelle en l'exploitant en toute sécurité et vous montrera comment résoudre le problème. Cela permet aux pentesters et aux développeurs de gagner du temps. Cependant, le plus grand atout de DAST a un prix: les scanners DAST ne peuvent tester qu'une application qui fonctionne, ce qui signifie que vous ne pouvez numériser avec un scanner DAST qu'une fois l'application créée avec succès.
-	\subsubsection*{SAST}
+	\subsubsection{DAST [Dynamic Application Security Testing]}
+	Un outil de test de sécurité d'application dynamique teste les applications et services Web en utilisant des attaques fictives via HTTP / HTTPS, semblable à ce qu'un pirate informatique ferait. Cette méthode est appelée test en boîte noire. Simplement, un scanner DAST n'a pas besoin d'avoir accès au code et au fonctionnement interne d'une application. En fait, il automatise ce qu'un pirate informatique ferait dans une application en direct. Ainsi, lorsqu'une vulnérabilité est trouvée, cela signifie généralement que la vulnérabilité pourrait être exploitée. Souvent, un bon scanner DAST montrera que la vulnérabilité est réelle en l'exploitant en toute sécurité et nous montrera comment résoudre le problème. Cela permet aux pentesters et aux développeurs de gagner du temps. Cependant, le plus grand atout de DAST a un prix: les scanners DAST ne peuvent tester qu'une application qui fonctionne, ce qui signifie que nous ne pouvons numériser avec un scanner DAST qu'une fois l'application créée avec succès.
+
 	
-	\subsection{Les outils du test :}
-	\subsubsection{Utilisation :}
-	Les scanners de vulnérabilités peuvent être utilisés dans des objectifs licites ou illicites :\\\\
+	\subsubsection{Les outils de DAST :}
+	\textbf{Utilisation :} \\
+	Les scanners DAST de vulnérabilités peuvent être utilisés dans des objectifs licites ou illicites :\\\\
 	$\bullet$ \textbf{Objectifs licites :} les experts en sécurité informatique ou les entreprises utilisent les scanners de vulnérabilités pour trouver les failles de sécurité des systèmes informatiques et des systèmes de communications de leurs entreprises dans le but de les corriger avant que les pirates informatiques ne les exploitent.\\
 	$\bullet$ \textbf{Objectifs illicites :} : les pirates informatiques utilisent les mêmes outils pour trouver les failles dans les systèmes des entreprises pour les exploiter à leur avantage.
 	
 	\subsubsection{Nikto: }
-	\includegraphics[width=1.5cm]{images/pfe_nv/nikto.png}  est un  scanner de vulnérabilité de ligne de commande de logiciel gratuit  qui analyse les  serveurs web  pour les fichiers / CGI dangereux.
+	\includegraphics[width=1.5cm]{images/pfe_nv/nikto.png}  est un  scanner de vulnérabilité de ligne de commande de  logiciel gratuit  qui analyse les  serveurs web  pour les fichiers / CGI dangereux.
 	Il effectue des vérifications génériques et spécifiques au type de serveur. 
-	Il capture et imprime également tous les cookies reçus. \\
+	Il capture et imprime également tous les  cookies  reçus. \\
 	Le code Nikto lui-même est un logiciel gratuit, mais les fichiers de données qu'il utilise pour piloter le programme ne le sont pas.
 	
 	\subsubsection{Wapiti: }
@@ -532,7 +534,7 @@
 			\centering
 			\includegraphics[width=10cm]{images/pfe_nv/wapiti_copie_vulnerable.png}
 			\caption{Output de la commande de test de vulnérabilités [ Wapiti] }
-			\label{page3}
+			\label{page6}
 		\end{figure}
 	\end{center}
 Aprés chaque scan Wapiti génère un rapport décrit la catégorie et le nombre du vulnérabilités détecter.
@@ -541,7 +543,7 @@ Aprés chaque scan Wapiti génère un rapport décrit la catégorie et le nombre du v
    			\centering
    			\includegraphics[width=10cm]{images/pfe_nv/html_report_wapiti_vulnerable.png}
    			\caption{Rapport généré par Wapiti }
-   			\label{page3}
+   			\label{page7}
    		\end{figure}
    	\end{center}
 	
@@ -551,7 +553,7 @@ La même chose pour Nikto :
 		\centering
 		\includegraphics[width=8cm]{images/pfe_nv/RapportHTML_NiktoVulnerable.png}
 		\caption{Rapport généré par Nikto }
-		\label{page3}
+		\label{page8}
 	\end{figure}
 \end{center}
 
@@ -564,12 +566,136 @@ On a attaqué la plateforme Rokhas par les deux outils, et les deux confirment qu
 		\includegraphics[width=7cm]{images/pfe_nv/resume.png}~~~~
 		\includegraphics[width=8cm]{images/pfe_nv/nikto_urba.png}
 		\caption{Rapports Plateforme Rokhas [0 vulnérabilités]}
-		\label{page3}
+		\label{page9}
 	\end{figure}
 \end{center}
+
+	\subsubsection{SAST [Static Application Security Testing]}
+	Les scanners SAST, en revanche, ne nécessitent pas d'application en cours d'exécution et fonctionnelle. Au lieu d'analyser l'application de l'extérieur, ils analysent directement le code. Un outil d'analyse statique (SAST) tenterait de savoir comment les données transitent par l'application vers une base de données. Donc, disons d'une source d'entrée (comme un champ de formulaire) jusqu'à un point de synchronisation sensible à la sécurité (comme un appel à une base de données). En analysant ce flux, l'outil vérifie si ces synchronisations sensibles à la sécurité sont sûres et nettoyées, et c'est ainsi qu'un outil SAST trouve des vulnérabilités. Ainsi, au lieu d'attaquer l'application de l'extérieur, comme le ferait un DAST, un SAST détermine le fonctionnement interne de notre base de code et essaie de trouver des vulnérabilités de l'intérieur. Pour cette raison, SAST ne nécessite pas que l'application soit fonctionnelle et en cours d'exécution.
+	
+	\subsubsection{L' outil de SAST :}
+	\includegraphics[width=5cm]{images/pfe_nv/sonarqubelogo.png} est une plateforme open source développée par SonarSource pour une inspection continue de la qualité du code afin d'effectuer des révisions automatiques avec une analyse statique du code pour détecter les bugs, les vulnérabilités de sécurité sur plus de 20 langages de programmation. SonarQube propose des rapports sur le code dupliqué, les normes de codage, les tests unitaires, la couverture du code, la complexité du code, les commentaires, et les failles de sécurité. 
+	\subsubsection{Application: }
+	\textbf{Premier cas: une application vulnérable :} \\
+	Il s'agit d'une application Web «vulnérable» développée par Cyber Security and Privacy Foundation ( www.cysecurity.org ). Cette application est destinée aux programmeurs Java et aux autres personnes qui souhaitent en savoir plus sur les vulnérabilités des applications Web et écrire du code sécurisé.\\
+	Après le lancement du scan sur l'application on voit dans SonarQube tous les projets qu'on a scanné:
+	\begin{center}
+		\begin{figure}[!h]
+			\centering
+			\includegraphics[width=16cm]{images/pfe_nv/homePage_sonarqube.png}
+			\caption{HOME page SonareQube }
+			\label{page12}
+		\end{figure}
+	\end{center}
+	\textbf{\underline{Mots clés:}}\\
+		$\bullet$ \textbf{un bug} est un fonctionnement non désiré dans un programme informatique,On parle de bug quand le logiciel ne fait pas ce qu'on lui a demandé, qu'il se bloque et ne répond plus ou qu'il plante.\\
+		$\bullet$ \textbf{vulnérabilités} ce sont les failles de sécurité.\\
+		$\bullet$ \textbf{Un point d'accès de sécurité} met en évidence un morceau de code sensible à la sécurité que le développeur doit examiner. Après examen, on constatent qu'il n'y a aucune menace ou bien nous devons appliquer un correctif pour sécuriser le code.\\
+		$\bullet$ \textbf{Les mauvaises odeurs} sont des mauvaises pratiques de conception logicielle qui conduisent à l'apparition de défauts.\\\\
+		En choisit le projet qu'on veut, Dans l'aperçu on voit les résultats. Par exemple pour ce projet le scanner il a trouvé 52 bugs, 27 vulnérabilités, 18 point d'accès de sécurité, 67 mauvaises odeurs.\\\\
+	\begin{center}
+		\begin{figure}[!h]
+			\centering
+			\includegraphics[width=18cm]{images/pfe_nv/overview_sonarqube.png}
+			\caption{Aperçu SonareQube }
+			\label{page13}
+		\end{figure}
+	\end{center}
+
+	
+	On remarque devant chaque élément une lettre par exemple devant Bugs ona E de méme pour vulnérabilités et les points d'accès. mais pour les code smells on a la lettre A.
+	
+	Les lettres représentent le degré de dangerosité.\\\\
+	\textbf{E}: bloqueur ; \textbf{D}: critique ; \textbf{C}: majeur ; \textbf{B}:mineure ; \textbf{A}:pas de problème. \\\\
+	Dans l'aperçu pour les vulnérabilités par exemple, il indique la lettre de la plus dangereuse vulnérabilité. Si la plus dangereuse a la lettre C, et tous les autres ont soit B ou bien A, donc il affiche C. et la même chose pour les autres éléments. \\\\
+	Dans l'onglet  Problèmes il liste tous les bugs, les vulnérabilités... et il donne le détail pour chaque problème, et il propose aussi des solutions.\\
+	\newpage
+		\begin{center}
+			\begin{figure}[!h]
+				\centering
+				\includegraphics[width=15cm]{images/pfe_nv/vulnerabilities_sonrqube.png}
+				\caption{Problèmes SonareQube }
+				\label{page14}
+			\end{figure}
+		\end{center}
+	Mais ce qui nous intéresse le plus, ce sont les points d'accès de sécurité.
+	
+	\begin{center}
+		\begin{figure}[!h]
+			\centering
+			\includegraphics[width=15cm]{images/pfe_nv/sql_injection_sonarqube.png}
+			\caption{Les Points d'accès de sécurité SonareQube }
+			\label{page15}
+		\end{figure}
+	\end{center}
+	Lorsque SonarQube détecte un point d'accès de sécurité, il l'ajoute à la liste des points d'accès de sécurité en fonction de sa priorité de révision de haute à basse. Les points d'accès avec une priorité de révision élevée sont les plus susceptibles de contenir du code qui doit être sécurisé et requiert notre attention en premier.\\
+	La priorité de révision est déterminée par la catégorie de sécurité de chaque règle de sécurité. Les règles dans les catégories qui sont classées haut sur les standards OWASP Top 10 et CWE Top 25 sont considérées comme ayant une haute priorité d'examen. Les règles dans les catégories qui ne sont pas classées haut ou qui ne sont pas mentionnées dans les standards OWASP Top 10 ou CWE Top 25 sont classées moyenne ou faible.\\\\\\
+	 \textbf{\large \underline{Note :}}\\\\
+	\textbf{Common Weakness Enumeration [CWE]} est une liste des vulnérabilités que l'on peut rencontrer dans les logiciels. Cette liste est maintenue par l'organisme MITRE, le projet étant soutenu par la National Cyber Security Division et le Département de la Sécurité intérieure des \'Etats-Unis.\\
+	\includegraphics[width=4cm]{images/pfe_nv/owasp.png} est une fondation à but non lucratif qui travaille à améliorer la sécurité des logiciels. Grâce à des projets de logiciels open source menés par la communauté, des centaines de sections locales dans le monde, des dizaines de milliers de membres et des conférences éducatives et de formation de premier plan, la Fondation OWASP est la source pour les développeurs et les technologues de sécuriser le Web.\\
+	
+	Le Top 10 OWASP est un document de sensibilisation standard pour les développeurs et la sécurité des applications Web. Il représente un large consensus sur les risques de sécurité les plus critiques pour les applications Web.
+	
+	Sonarqube nous donne la possibilité d'exiger nos conditions pour décider est ce que le scan passe ou échoue à travers \textbf{Quality Gates}
+	
+	   \begin{center}
+	   	\begin{figure}[!h]
+	   		\centering
+	   		\includegraphics[width=13cm]{images/qualityGates.png}
+	   		\caption{Quality Gates SonareQube }
+	   		\label{page17}
+	   	\end{figure}
+	   \end{center}
+	
+	Il présente aussi des règles à respecter pour les différentes langages qui prend en charge afin de minimiser le nombres des bugs.  
+	
+	\begin{center}
+		\begin{figure}[!h]
+			\centering
+			\includegraphics[width=13cm]{images/sonarquberules.png}
+			\caption{Rules SonareQube }
+			\label{page18}
+		\end{figure}
+	\end{center} 
+	
+	\textbf{Deuxième cas: Analyse d'une partie du code source en cours d'exécution de l'entreprise} 
+	
+		\begin{center}
+			\begin{figure}[!h]
+				\centering
+				\includegraphics[width=17cm]{images/overviewGis.png}
+				\caption{Scan du code source de l'entreprise }
+				\label{page16}
+			\end{figure}
+		\end{center}
+		Cela peut sembler un petit peu bizarre, mais il y a deux facteurs qui sont responsable de ces chiffres.\\
+		$\bullet$ Le premier c'est l'utilisation d'une bibliothèque de XML parse  qui nécessite une configuration représente des problèmes.\\
+		$\bullet$ Le deuxième c'est les faux positifs , sonarqube préfère de déclarer q'une ligne dangereuse même si elle n'est pas, que déclarer une ligne dangereuse comme une ligne correcte.   
 	\newpage
 	\section{Les tests de performance}
+	\subsection{Définition :}
+	Les tests de performance et de charge ont pour principal objectif la validation d'une solution logicielle et de son architecture sous-jacente liées à une utilisation simultanée multi-utilisateurs, permettant ainsi d'éviter certains problèmes en production. Ils permettent de garantir une qualité de service applicative dans des conditions réelles d'utilisation.
+	\subsection{Généralités :}
+	Les tests de performance devraient théoriquement être réalisés au plus tôt dans le cycle de développement applicatif afin de minimiser les modifications applicatives engendrées par la découverte des anomalies de performance. \\\\
+	Classiquement, les tests de performance sont réalisés dans un des environnements de pré-production afin d'être au plus proche de la réalité technique de production. Les résultats seront alors réellement complets et probants.\\\\
+	Les tests de performance et de charge ne doivent pas, comme les tests fonctionnels unitaires, couvrir 90\% des cas de tests, mais doivent couvrir les aspects applicatifs présentant des risques systèmes en charge, des risques d'interactions avec d'autres applicatifs, des risques stratégiques ou financiers sur des fonctionnalités ciblées dans un contexte multi-utilisateurs.
+	\subsection{Les risques :}
+	Si une application n'est pas performante, les conséquences pourraient être :\\
+	$\bullet$ La qualité d'accueil des clients qui se dégrade.\\	
+	$\bullet$ La perte de clients.\\
+	$\bullet$ La perte de revenu.\\
+	
+	\subsection{Outils de test :}
+	\includegraphics[width=4cm]{images/pfe_nv/JMeter.png} Est un projet de logiciel libre permettant d'effectuer des tests de performance d'applications et de serveurs selon différents protocoles ainsi que des tests fonctionnels. Il est développé au sein de la Fondation Apache (ASF).\\
+	Il permet de simuler le comportement de plusieurs utilisateurs agissant de manière simultanée sur une application Web.\\
+	JMeter est entièrement écrit en Java, ce qui lui permet d'être utilisé sur tout système d'exploitation supportant une machine virtuelle Java (JVM).\\\\
+	
+	\includegraphics[width=4cm]{images/pfe_nv/blazemeter.png}  Commercialise une plateforme commerciale de test de charge en libre-service en tant que service (PaaS), qui est compatible avec Apache JMeter open-source ,dans le cadre de test de performance de la Apache Software Foundation.\\  BlazeMeter a été fondé en 2011 et a été acquis par CA Technologies en 2016.
+	 
 	\section{Conclusion}
+	
+	Pas encore ..
+	
 	\newpage
 	\chapter{\textbf{L'intégration dans la chaine CI/CD de GitLab}}
 	\section{Introduction}
@@ -598,7 +724,7 @@ On a attaqué la plateforme Rokhas par les deux outils, et les deux confirment qu
 	 			\centering
 	 	     	\includegraphics[width=11cm]{images/pfe_nv/deploiementcontinucicd.png}
 	 	     	\caption{Intégration/Livraison/Déploiment Continue}
-	 			\label{page6}
+	 			\label{page10}
 	 		\end{figure}
 	 	\end{center}
 
@@ -620,15 +746,19 @@ On a attaqué la plateforme Rokhas par les deux outils, et les deux confirment qu
          \item \textbf{Runners :}  GitLab Runner est le projet open source utilisé pour exécuter les tâches et renvoyer les résultats à GitLab. Il est utilisé conjointement avec GitLab CI / CD .\\
 	 \end{itemize}
 	 
-	  \textbf{Exemple :} \\
-	  	\begin{center}
-	  		\begin{figure}[!h]
-	  			\centering
-	  			\includegraphics[width=18cm]{images/pfe_nv/pipl.png}
-	  			\caption{Exemple d'une pipline}
-	  			\label{page6}
-	  		\end{figure}
-	  	\end{center}
+	  
+	  	%\begin{center}
+	  	%	\begin{figure}[!h]
+	  	%		\centering
+	  	%		\includegraphics[width=18cm]{images/pfe_nv/pipl.png}
+	  	%		\caption{Exemple d'une pipline}
+	  	%		\label{page11}
+	  	%	\end{figure}
+	  	%\end{center} 
 	  	
-	 \textbf{Note:} le mot clé \underline{tags} a pour but de spécifié le runner qui va exécuté le scripte du stage. Par défaut GitLab contient des runners qui peuvent exécuter les commandes ( Bash, C++, Maven, Nodejs...),Mais dans notre cas, on a ajouté nos 2 runners un pour exécuté les commandes wapiti et l'autre pour exécuté les commandes de Nikto.    
+	% \textbf{Note:} le mot clé \underline{tags} a pour but de spécifié le runner qui va exécuté le scripte du stage. Par défaut GitLab contient des runners qui peuvent exécuter les commandes ( Bash, C++, Maven, Nodejs...),Mais dans notre cas, on a ajouté nos 2 runners un pour exécuté les commandes wapiti et l'autre pour exécuté les commandes de Nikto.    
+	 
+	 \section{Exemples d'intégration des tests :}
+	 	 Pas Encore ..
+	 	
 \end{document} 
